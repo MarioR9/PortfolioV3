@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    border-bottom: 1px solid; color: aliceblue;
+    background-color: black;
+}
+
+.header__logo {
+    height: 50px;
+    object-fit: contain;
+}
+.header__menu {
+    color:white;
+    padding: 20px;
+}
