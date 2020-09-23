@@ -1,37 +1,3 @@
 .header {
-    display: flex;
-    justify-content:  space-between;
-    align-items: center;
-    height: 5vh;
-    border-bottom: 1px solid; color: aliceblue;
-    background-color: rgb(92, 87, 87);
-}
-
-.header__logo {
-    height: 50px;
-    object-fit: contain;
-}
-.header__icon {
-    color:white;
-    padding: 20px;
-}
-.header__menu{
-    display: flex;
-    
-}
-.header__links {
-    display: flex;
-}
-.header__burger {
-    display: none;
-}
-
-@media screen and (max-width: 768px){
-    .header__burger {
-        color: white;
-        display: flex;
-    }
-    .header__links {
-        display: none;
-    }
+  
 }
