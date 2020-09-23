@@ -1,7 +1,29 @@
 .about {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .about__img {
-    max-width: 100%;
-    margin-bottom: 50%;
+    height: 30vh;
+    object-fit: contain;
+}
+.about__donwload{
+    margin-top: 10px;
+    position: relative;  
+}
+.about__donwloadBtn {
+    outline: 0;
+    margin-right: 0px !important;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+    padding: 8px 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #0bceaf;
+    color: #fff;
+}
+.about_tech {
+
 }
