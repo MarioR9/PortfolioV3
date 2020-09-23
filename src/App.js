@@ -5,6 +5,7 @@ import Header from './Header'
 
 function App() {
   return (
+    //single page application
     <div className="App">
     {/* ===================
            NAVIGATION
