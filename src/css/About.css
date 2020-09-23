@@ -2,20 +2,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+    font-style: none;
+    line-height: 24px;
+    font-weight: 500;
+    
 }
 .about__img {
-    height: 30vh;
     object-fit: contain;
+    max-width: 100%;
+    min-width: 105px;
+    height:auto;
+}
+.about__info {
+    max-width:100%;
+    height:auto;
 }
 .about__donwload{
-    margin-top: 10px;
+    margin-top: 20px;
     position: relative;  
 }
 .about__donwloadBtn {
     outline: 0;
     margin-right: 0px !important;
     cursor: pointer;
-    margin-top: 20px;
     font-size: 1rem;
     background-color: rgb(255, 255, 255);
     padding: 8px 30px;
@@ -24,6 +35,20 @@
     background-color: #0bceaf;
     color: #fff;
 }
-.about_tech {
+.about_tech { 
+    font-size: 1rem;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.about_tech  li{
+    margin-left: 10px;
+    margin-bottom: 7px;
+    display: flex;
+    border: solid;
+    color: white;  
+    padding: 1% 10px;
+    font-weight: bold;
+    border-radius: 7px;
 }
