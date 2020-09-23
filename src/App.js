@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Navigation from './components/Navigation'
-import Home from './components/Home'
 import About from './components/About'
 import Skills from './components/Skills'
 import Experience from './components/Experience'
@@ -13,11 +12,10 @@ function App() {
     //single page application
     <div className="App">
       <Navigation/>
-      {/* <Home/>
       <About/>
-      <Skills/>
+      {/* <Skills/>
       <Experience/>
-      <Portfolio/> */}
+      <Portfolio/>  */}
     </div>
   );
 }

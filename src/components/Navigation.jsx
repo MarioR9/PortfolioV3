@@ -6,7 +6,9 @@ export const Navigation = () => {
         <div className='nav'>
             <div>
             <div>
-            <img className='nav__logo' src={Logo} alt='logo'/>
+            <a href='/home'>
+             <img className='nav__logo' src={Logo} alt='logo'/>
+            </a>
             </div >
             </div>
             <div className="nav__links">
