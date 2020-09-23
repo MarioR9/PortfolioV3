@@ -1,0 +1,22 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo {
+    height: 70px;
+    object-fit: contain;
+    
+}
+.nav__links li {
+    color: white;
+    display: inline;
+    list-style: none;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__links  {
+        display: none;
+    }
+  }
