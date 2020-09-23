@@ -6,15 +6,15 @@ export const Navigation = () => {
         <div className='nav'>
             <div>
             <div>
-                <img className='nav__logo' src={Logo} alt='logo'/>
+            <img className='nav__logo' src={Logo} alt='logo'/>
             </div >
             </div>
             <div className="nav__links">
-            <li>Home</li>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Experience</li>
-            <li>Portfolio</li>
+            <a href='/home'><li>Home</li></a >
+            <a href='/about'><li>About</li></a >
+            <a href='/skills'><li>Skills</li></a >
+            <a href='/experience'><li>Experience</li></a >
+            <a href='/portfolio'><li>Portfolio</li></a >
             </div>
         </div>
     )
