@@ -14,19 +14,20 @@ export const About = () => {
                     <Col>
                     <div className='about__info'>
                     <h2>About Me</h2>
+                    <br/>
                     {about}
                     <div className='about_tech'>
                         <Row>
-                        <li>JavasScript</li>
-                        <li>RubyonRails</li>
-                        <li>React</li>
-                        <li>Redux</li>
-                        <li>Puppetter</li>
-                        <li>Node</li>
-                        <li>BootstrapUI</li>
-                        <li>SemanticUI</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
+                        <li><span>JavasScript</span></li>
+                        <li><span>RubyonRails</span></li>
+                        <li><span>React</span></li>
+                        <li><span>Redux</span></li>
+                        <li><span>Puppetter</span></li>
+                        <li><span>Node</span></li>
+                        <li><span>BootstrapUI</span></li>
+                        <li><span>SemanticUI</span></li>
+                        <li><span>HTML</span></li>
+                        <li><span>CSS</span></li>
                         </Row>
                     </div>
                     <div className='about__donwload'>
