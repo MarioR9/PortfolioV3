@@ -1,4 +1,5 @@
 .home {
+    margin-top: 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,14 +51,6 @@
     font-family: "roboto", sans-serif;
     font-size: 14px;
     color: white;
-}
-
-.home__social {
-    list-style: none;
-    float: left;
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
 }
 .home__social a {
     color: inherit;
@@ -113,5 +106,18 @@
     }
     .home__col2 {
         order: 2
+    }
+    .home__header h2 {
+        text-align: center;
+    }
+    .home__header h4 {
+        text-align: center;
+    }
+    .home__details {
+        text-align: center;
+    }
+    .home__social {
+        color: inherit;
+        text-align: center;
     }
   }
