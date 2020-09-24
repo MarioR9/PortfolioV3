@@ -25,9 +25,9 @@ const Home = () => {
                     </div>
                     <div >
                         <ul className='home__social'>
-                            <li><a><i class="fab fa-github fa-lg"></i></a></li>
-                            <li><a><i class="fab fa-linkedin fa-lg"></i></a></li>
-                            <li><a><i class="fab fa-medium fa-lg"></i></a></li>
+                            <li><a href='https://github.com/MarioR9'><i class="fab fa-github fa-lg"></i></a></li>
+                            <li><a href='https://www.linkedin.com/in/mario-rodriguezan/'><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href='https://medium.com/@mariorodriguezan'><i class="fab fa-medium-m"></i></a></li>
                         </ul>
                     </div>
                     </div>
