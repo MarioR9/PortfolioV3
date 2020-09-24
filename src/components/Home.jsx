@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import '../css/Home.css'
-
+import profile from '../assets/avatar.jpeg'
 const Home = () => {
     const name = {first: 'Mario', last: "Rodriguez"}
     const details = {email: "mariorodriguezan@gmail.com",phone: "+1 571-251-7280", location: 'Washington, DC'}
@@ -9,7 +9,7 @@ const Home = () => {
         <div className='home'>
             <Container>
                 <Row>
-                    <Col>  
+                    <Col className='home__col2'>  
                     <div className='home__tag'>
                     <span>Hello I'm</span>
                     </div>
@@ -32,7 +32,9 @@ const Home = () => {
                     </div>
                     </div>
                     </Col>
-                    <Col></Col>
+                    <Col className='home__col1'>
+                        <img src={profile} alt="avatar" className="home__avatar"/>
+                    </Col>
                 </Row>
             </Container>
         </div>

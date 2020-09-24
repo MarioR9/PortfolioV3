@@ -10,8 +10,10 @@ const About = () => {
         <div className="about">
             <Container>
                 <Row>
-                    <Col><img className='about__img' src={aboutImg} alt='aboutImage'/></Col>
-                    <Col>
+                    <Col className='about__col1'>
+                        <img className='about__img' src={aboutImg} alt='aboutImage'/>
+                        </Col>
+                    <Col className='about__col2'>
                     <div className='about__info'>
                     <h2>About Me</h2>
                     <br/>
