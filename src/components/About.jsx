@@ -4,13 +4,13 @@ import aboutImg from '../assets/about.png'
 import { Container, Row, Col } from 'react-bootstrap';
 import GetAppIcon from '@material-ui/icons/GetApp';
 
-export const About = () => {
+const About = () => {
     const about= "Hello, I'm Mario, I am a Full-stack web developer based on Washington, DC. I have expericen with multiple programing langues as well as data base. I have experice with: "
     return (
         <div className="about">
             <Container>
                 <Row>
-                    <Col><img className='about__img' src={aboutImg}/></Col>
+                    <Col><img className='about__img' src={aboutImg} alt='aboutImage'/></Col>
                     <Col>
                     <div className='about__info'>
                     <h2>About Me</h2>

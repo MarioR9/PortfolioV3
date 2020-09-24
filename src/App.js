@@ -12,7 +12,8 @@ function App() {
     //single page application
     <div className="App">
       <Navigation/>
-      <About/>
+      <Home/>
+      {/* <About/> */}
       {/* <Skills/>
       <Experience/>
       <Portfolio/>  */}
