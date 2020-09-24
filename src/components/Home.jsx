@@ -19,15 +19,15 @@ const Home = () => {
                     <h4>Software Engineer</h4>
                     </div>
                     <div className='home__details'>
-                      <li><p><i class="fas fa-envelope"></i> {details.email}</p></li>
-                      <li><p><i class="fa fa-phone"></i> {details.phone}</p></li>
-                      <li><p><i class="fa fa-map-marker"></i>  {details.location}</p></li>
+                      <li><p><i className="fas fa-envelope"></i>{details.email}</p></li>
+                      <li><p><i className="fa fa-phone"></i>{details.phone}</p></li>
+                      <li><p><i className="fa fa-map-marker"></i>{details.location}</p></li>
                     </div>
                     <div >
                         <ul className='home__social'>
-                            <li><a href='https://github.com/MarioR9'><i class="fab fa-github fa-lg"></i></a></li>
-                            <li><a href='https://www.linkedin.com/in/mario-rodriguezan/'><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href='https://medium.com/@mariorodriguezan'><i class="fab fa-medium-m"></i></a></li>
+                            <li><a href='https://github.com/MarioR9'><i className="fab fa-github fa-lg"></i></a></li>
+                            <li><a href='https://www.linkedin.com/in/mario-rodriguezan/'><i className="fab fa-linkedin-in"></i></a></li>
+                            <li><a href='https://medium.com/@mariorodriguezan'><i className="fab fa-medium-m"></i></a></li>
                         </ul>
                     </div>
                     </div>

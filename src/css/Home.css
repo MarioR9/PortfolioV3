@@ -89,3 +89,12 @@
     color:#0bceaf;
     transition: 0.5s;
 }
+.fa-envelope {
+    padding-right: 15px;
+}
+.fa-phone {
+    padding-right: 15px;
+}
+.fa-map-marker {
+    padding-right: 15px;
+}
