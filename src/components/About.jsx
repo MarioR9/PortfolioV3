@@ -44,21 +44,21 @@ const About = () => {
                 <Row>
                     <Col>
                     <div className='about__traits'>
-                        <i><i class="fa fa-code iron-color"></i></i>
+                        <i><i className="fa fa-code iron-color"></i></i>
                         <h3>Frontend Development</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                     </div>
                     </Col>
                     <Col>
                     <div className='about__traits'>
-                        <i class="fas fa-server"></i>
+                        <i className="fas fa-server"></i>
                         <h3>Backend Development</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                     </div>
                     </Col>
                     <Col>
                     <div className='about__traits'>
-                        <i class="fas fa-pencil-ruler"></i>
+                        <i className="fas fa-pencil-ruler"></i>
                         <h3>UI Design</h3>
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                     </div>
