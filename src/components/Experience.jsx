@@ -36,6 +36,56 @@ const Experience = () => {
 
                     <Col>
                     <h3>Work Experience</h3>
+                    <div>
+                        <Row>
+                            <Col>
+                        <div className='exp__work'>
+                        <h4>Web Development<p class="exp__colorDetails">Freelancer</p> </h4>
+                        <div class="exp__colorDetails">Current</div>
+                        <p>Experience building responsive and modern sites with best practice techniques</p>
+                            <ul>
+                            <li>HTML and CSS</li>
+                            <li>JavaScript and Postgresql</li>
+                            <li>Responsive design and development</li>
+                            <li>Popular front-end frameworks (e.g. Bootstrap)</li>
+                            <li>User Experience (UX)</li>
+                            <li>Server-side development</li>
+                            <li>database management</li>
+                        </ul>
+                        </div>
+                         </Col>
+                         </Row>
+                        <Row>
+                        <Col>
+                        <div className='exp__work'>
+                        <h4>Sales Representative<p class="exp__colorDetails">AT&T</p> </h4>
+                        <div class="exp__colorDetails">​2017 - 2019</div>
+                        <p>Resposabilities</p> 
+                        <lu>
+                            <li>Troubleshooting wireless devices</li>
+                            <li>Advised customers on purchasing the right products and plans based on their lifestyle and usage patterns</li>
+                            <li>On boarded customers, helped them set up their devices, explained their bill, and creating their AT&T online account.</li>  
+                        </lu>  
+                        </div>
+                        </Col>
+                        </Row>
+                        <Row>
+                        <Col>
+                        <div className='exp__work'>
+                        <h4>Sales Representative<p class="exp__colorDetails">T-Mobile</p> </h4>
+                        <div class="exp__colorDetails">​2012 - 2016</div>
+                        <p>Resposabilities</p> 
+                        <lu>
+                            <li>Troubleshooting wireless devices</li>
+                            <li>Maintained good working relations with retail customers and ensured customer satisfaction at every stage of sale</li>
+                            <li>Called customers within 3 days of activation for feedback and to ensure the service is working as it should.</li>  
+                            <li>On boarded customers, helped them set up their devices for the first time, explained their first bill, created their T-Mobile online account, set up their Refer-a-Friend account</li>
+                        </lu>  
+                        </div>
+                        </Col>
+                        </Row>
+                       
+                    </div>
                     </Col>
                 </Row>
             </Container>
