@@ -61,7 +61,7 @@ const Skills = () => {
                     </Col>
                     <Col className='skills__col1'>
                     <h3>Professional Skills</h3>
-                    <div>
+                    <div className='container2'>
                         <Container>
                             <Row>
                                 <Col className='skills__circles'>
