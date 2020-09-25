@@ -3,6 +3,8 @@ import '../css/About.css'
 import aboutImg from '../assets/about.png'
 import { Container, Row, Col } from 'react-bootstrap';
 import GetAppIcon from '@material-ui/icons/GetApp';
+import resume from '../assets/MRresume.pdf'
+
 
 const About = () => {
     const about= "Hello, I'm Mario, I am a Full-stack web developer based on Washington, DC. I have expericen with multiple programing langues as well as data base. I have experice with: "
@@ -33,9 +35,9 @@ const About = () => {
                         </Row>
                     </div>
                     <div className='about__donwload'>
-                    <span className='about__donwloadBtn'>Resume
+                    <a download='resume' href={resume} className='about__donwloadBtn'>Resume
                     <GetAppIcon/>
-                    </span>
+                    </a>
                     </div>
                     </div>
                     </Col>
