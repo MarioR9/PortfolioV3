@@ -1,6 +1,6 @@
 import React from 'react'
 import '../css/Skills.css'
-import { Container, Row, Col, ProgressBar } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 const Skills = () => {
@@ -59,7 +59,7 @@ const Skills = () => {
                     </div>
                     
                     </Col>
-                    <Col className='skills__col2'>
+                    <Col className='skills__col1'>
                     <h3>Professional Skills</h3>
                     <div>
                         <Container>
@@ -68,17 +68,21 @@ const Skills = () => {
                                 <div className='skills__circles'>
                                     <svg viewBox="0 0 100 100" height='120'>
                                     <circle cx="50" cy="50" r="40" stroke="#c7c6c699" stroke-width="5" fill-opacity="0" />
-                                    <circle cx="50" cy="50" r="40" stroke="#0bceaf" stroke-width="5" fill-opacity="0" />
+                                    <circle className='skills__circlePercentage0' cx="50" cy="50" r="40" stroke="#0bceaf" stroke-width="5" fill-opacity="0" />
                                     </svg>
+                                    <p className='skills__percent'>100%</p>
+                                    <p>Communication</p>
                                 </div>
                                 </Col>
                                 <Col>
                                 <div className='skills__circles'>
                                     <svg viewBox="0 0 100 100" height='120'>
                                     <circle cx="50" cy="50" r="40" stroke="#c7c6c699" stroke-width="5" fill-opacity="0" />
-                                    <circle cx="50" cy="50" r="40" stroke="#0bceaf" stroke-width="5" fill-opacity="0" />
+                                    <circle className='skills__circlePercentage1' cx="50" cy="50" r="40" stroke="#0bceaf" stroke-width="5" fill-opacity="0" />
                                     </svg>
-                                    </div>
+                                    <p className='skills__percent'>100%</p>
+                                    <p>Team Work</p>
+                                </div>
                                 </Col>
                             </Row>
                             <Row>
@@ -86,16 +90,20 @@ const Skills = () => {
                                 <div className='skills__circles'>
                                     <svg viewBox="0 0 100 100" height='120'>
                                     <circle cx="50" cy="50" r="40" stroke="#c7c6c699" stroke-width="5" fill-opacity="0" />
-                                    <circle cx="50" cy="50" r="40" stroke="#0bceaf" stroke-width="5" fill-opacity="0" />
+                                    <circle className='skills__circlePercentage2' cx="50" cy="50" r="40" stroke="#0bceaf" stroke-width="5" fill-opacity="0" />
                                     </svg>
+                                    <p className='skills__percent'>100%</p>
+                                    <p>Team Work</p>
                                 </div>
                                 </Col>
                                 <Col>
                                 <div className='skills__circles'>
                                     <svg viewBox="0 0 100 100" height='120'>
                                     <circle cx="50" cy="50" r="40" stroke="#c7c6c699" stroke-width="5" fill-opacity="0" />
-                                    <circle cx="50" cy="50" r="40" stroke="#0bceaf" stroke-width="5" fill-opacity="0" />
+                                    <circle className='skills__circlePercentage3' cx="50" cy="50" r="40" stroke="#0bceaf" stroke-width="5" fill-opacity="0" />
                                     </svg>
+                                    <p className='skills__percent'>100%</p>
+                                    <p>Creativity</p>
                                 </div>
                                 </Col>
                             </Row>
