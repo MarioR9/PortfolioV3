@@ -64,45 +64,45 @@ const Skills = () => {
                     <div>
                         <Container>
                             <Row>
-                                <Col>
-                                <div className='skills__circles'>
+                                <Col className='skills__circles'>
+                                <div >
                                     <svg viewBox="0 0 100 100" height='120'>
                                     <circle cx="50" cy="50" r="40" stroke="#c7c6c699" stroke-width="5" fill-opacity="0" />
                                     <circle className='skills__circlePercentage0' cx="50" cy="50" r="40" stroke="#0bceaf" stroke-width="5" fill-opacity="0" />
                                     </svg>
-                                    <p className='skills__percent'>100%</p>
+                                    <p className='skills__percent'>95%</p>
                                     <p>Communication</p>
                                 </div>
                                 </Col>
-                                <Col>
-                                <div className='skills__circles'>
+                                <Col className='skills__circles'>
+                                <div>
                                     <svg viewBox="0 0 100 100" height='120'>
                                     <circle cx="50" cy="50" r="40" stroke="#c7c6c699" stroke-width="5" fill-opacity="0" />
                                     <circle className='skills__circlePercentage1' cx="50" cy="50" r="40" stroke="#0bceaf" stroke-width="5" fill-opacity="0" />
                                     </svg>
-                                    <p className='skills__percent'>100%</p>
+                                    <p className='skills__percent'>98%</p>
                                     <p>Team Work</p>
                                 </div>
                                 </Col>
                             </Row>
                             <Row>
-                                <Col>
-                                <div className='skills__circles'>
+                                <Col className='skills__circles'>
+                                <div>
                                     <svg viewBox="0 0 100 100" height='120'>
                                     <circle cx="50" cy="50" r="40" stroke="#c7c6c699" stroke-width="5" fill-opacity="0" />
                                     <circle className='skills__circlePercentage2' cx="50" cy="50" r="40" stroke="#0bceaf" stroke-width="5" fill-opacity="0" />
                                     </svg>
-                                    <p className='skills__percent'>100%</p>
-                                    <p>Team Work</p>
+                                    <p className='skills__percent'>97%</p>
+                                    <p>Problem solving</p>
                                 </div>
                                 </Col>
-                                <Col>
-                                <div className='skills__circles'>
+                                <Col className='skills__circles'>
+                                <div>
                                     <svg viewBox="0 0 100 100" height='120'>
                                     <circle cx="50" cy="50" r="40" stroke="#c7c6c699" stroke-width="5" fill-opacity="0" />
                                     <circle className='skills__circlePercentage3' cx="50" cy="50" r="40" stroke="#0bceaf" stroke-width="5" fill-opacity="0" />
                                     </svg>
-                                    <p className='skills__percent'>100%</p>
+                                    <p className='skills__percent'>95%</p>
                                     <p>Creativity</p>
                                 </div>
                                 </Col>

@@ -33,31 +33,32 @@
     border-radius: 10px;
 }
 .skills__circles {
-    margin-bottom: 20%;
+    margin-left: 20%;
+    width: 10px;
 }
 .skills__percent{
     position: absolute;
     left: 50%;
     bottom: 50%;
-    padding: 6px;
+    padding: 0px;
     margin: 0px;
     transform: translate(-50%, -50%);
 }
 .skills__circlePercentage0 {
-    stroke-dasharray: 298.493, 298.493;
-    stroke-dashoffset: 0;
+    stroke-dasharray: 240%;
+    stroke-dashoffset: 15%;
 }
 .skills__circlePercentage1 {
-    stroke-dasharray: 298.493, 298.493; 
-    stroke-dashoffset: 0;
+    stroke-dasharray: 250%;
+    stroke-dashoffset: 15%;
 }
 .skills__circlePercentage2{
-    stroke-dasharray: 298.493, 298.493; 
-    stroke-dashoffset: 0;
+    stroke-dasharray: 245%;
+    stroke-dashoffset: 15%;
 }
 .skills__circlePercentage3{
-    stroke-dasharray: 298.493, 298.493; 
-    stroke-dashoffset: 0;
+    stroke-dasharray: 240%;
+    stroke-dashoffset: 15%;
 }
 
 
@@ -73,13 +74,6 @@
     }
     .skills__percent{
         padding: 2px;
-    }
-}
-@media screen and (max-width: 1720px) {
-    
-    
-    .skills__percent{
-        padding: 3px;
     }
 }
 
