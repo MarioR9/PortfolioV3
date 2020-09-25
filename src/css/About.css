@@ -1,6 +1,6 @@
 .about {
     display: flex;
-    margin-top: 15%;
+    margin-top: 12%;
     justify-content: space-between;
     align-items: center;
 }
@@ -87,7 +87,13 @@
     margin-top: 16px;
 
 }
+.fa-pencil-ruler {
+    color: #1cb62e;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-top: 16px;
 
+}
 @media screen and (max-width: 768px) {
     .about__col1 {
         order: 1

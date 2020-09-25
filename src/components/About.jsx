@@ -56,6 +56,13 @@ const About = () => {
                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
                     </div>
                     </Col>
+                    <Col>
+                    <div className='about__traits'>
+                        <i class="fas fa-pencil-ruler"></i>
+                        <h3>Web Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                    </Col>
                 </Row>
             </Container>
         </div>

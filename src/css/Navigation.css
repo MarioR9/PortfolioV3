@@ -2,14 +2,16 @@
     justify-content: space-around;
     align-items: center;
     margin: auto;
-    background-color: #1f1f24;
-}
-.nav__logo {
-    height: 80px;
-    object-fit: contain;
+    background-color: #110f17;
     
 }
+.nav__logo {
+    margin-left: 5vw;
+    height: 80px;
+    object-fit: contain;
+}
 .nav__links {
+    margin-right: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
