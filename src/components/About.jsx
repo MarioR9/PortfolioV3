@@ -40,6 +40,23 @@ const About = () => {
                     </div>
                     </Col>
                 </Row>
+                <h1 style={{color:'white', textAlign: "center", marginTop: '15%',fontSize: "30px", marginBottom: "5%"}}>What I do</h1>
+                <Row>
+                    <Col>
+                    <div className='about__traits'>
+                        <i><i class="fa fa-code iron-color"></i></i>
+                        <h3>Frontend Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                    </Col>
+                    <Col>
+                    <div className='about__traits'>
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    </div>
+                    </Col>
+                </Row>
             </Container>
         </div>
     )
