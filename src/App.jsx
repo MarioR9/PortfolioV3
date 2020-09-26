@@ -1,4 +1,4 @@
-import React from 'react';
+import React  from 'react';
 import './App.css';
 import Navigation from './components/Navigation'
 import About from './components/About'
@@ -7,12 +7,13 @@ import Experience from './components/Experience'
 import Portfolio from './components/Portfolio'
 import Home from './components/Home'
 
-function App() {
+const App = () => {
+   
   return (
     //single page application
     <div className="App">
       <Navigation/>
-      <Home/>
+      <Home/> 
       <About/>
       <Skills/>
       <Experience/>
