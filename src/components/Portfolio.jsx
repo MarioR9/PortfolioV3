@@ -9,7 +9,7 @@ import portfoliov2 from '../assets/portfoliov2.png'
 import marsrover from '../assets/marsrover.png'
 import portfoliov3 from "../assets/portfoliov3.png";
 
-import { Container } from 'react-bootstrap';
+import { Container, Fade } from 'react-bootstrap';
 
 const Portfolio = () => {
     const pages = [translateme,tonester,uber,portfoliov1,rickandmorty1, portfoliov2, marsrover, portfoliov3]

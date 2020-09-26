@@ -3,7 +3,7 @@ import '../css/Navigation.css'
 import Logo from '../assets/Mlogo2.png'
 import { Link } from "react-scroll";
 
-const Navigation = () => {
+const Navigation = (props) => {
     const links =["Home","About","Skills","Experience","Portfolio"]
     return (
         <div className='nav' >
@@ -16,7 +16,7 @@ const Navigation = () => {
             </div>
             <div className="nav__links">
                 {links.map(link =>
-                <Link key={link} to={link.toLowerCase()} smooth={true} duration={1000} href={`/${link.toLowerCase()}`}><li>{link}</li></Link>
+                <Link key={link} to={link.toLowerCase()} smooth={true} duration={1300} href={`/${link.toLowerCase()}`}><li>{link}</li></Link>
                 )}
             </div>
         </div>

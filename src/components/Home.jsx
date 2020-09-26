@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
 import '../css/Home.css'
 import profile from '../assets/avatar.jpeg'
+
 const Home = () => {
     const name = {first: 'Mario', last: "Rodriguez"}
     const details = {email: "mariorodriguezan@gmail.com",phone: "+1 571-251-7280", location: 'Washington, DC'}

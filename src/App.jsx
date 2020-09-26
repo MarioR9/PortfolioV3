@@ -1,4 +1,4 @@
-import React  from 'react';
+import React ,{ useState } from 'react';
 import './App.css';
 import Navigation from './components/Navigation'
 import About from './components/About'
@@ -7,17 +7,18 @@ import Experience from './components/Experience'
 import Portfolio from './components/Portfolio'
 import Home from './components/Home'
 
-const App = () => {
-   
+const App=()=>{
+
   return (
+    
     //single page application
     <div className="App">
-      <Navigation/>
-      <Home/> 
-      <About/>
-      <Skills/>
-      <Experience/>
-      <Portfolio/> 
+      <Navigation />
+      <Home /> 
+      <About />
+      <Skills />
+      <Experience />
+      <Portfolio /> 
     </div>
   );
 }
