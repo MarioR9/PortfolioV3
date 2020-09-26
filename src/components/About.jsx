@@ -12,7 +12,7 @@ const About = () => {
     const traits = [{title: "Frontend Development",description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",icon: <i className="fa fa-code iron-color"></i>},{title: "Backend Development",description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",icon: <i className="fas fa-server"></i>},{title: "UI Design",description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",icon:  <i className="fas fa-pencil-ruler"></i>}]
     const [open, setOpen] = useState(false);
     return (
-        <div className="about">
+        <div className="about" id='about'>
              <Button
         onClick={() => setOpen(!open)}
         aria-controls="example-fade-text"

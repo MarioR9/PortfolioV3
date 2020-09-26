@@ -16,7 +16,7 @@ const Portfolio = () => {
    
     return (
         <Container>
-        <div className='portfolio'>
+        <div className='portfolio' id='portfolio'>
             <div className='portfolio__header'>
                  <h3 >Recent Projects</h3>
             </div>

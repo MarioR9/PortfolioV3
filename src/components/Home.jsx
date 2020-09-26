@@ -6,7 +6,7 @@ const Home = () => {
     const name = {first: 'Mario', last: "Rodriguez"}
     const details = {email: "mariorodriguezan@gmail.com",phone: "+1 571-251-7280", location: 'Washington, DC'}
     return (
-        <div className='home'>
+        <div className='home' id='home'>
             <Container>
                 <Row>
                     <Col className='home__col2'>  

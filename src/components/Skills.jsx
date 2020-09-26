@@ -6,7 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 const Skills = () => {
     return (
         <div>
-            <div className='skills'>
+            <div className='skills' id='skills'>
             <Container>
                 <Row>
                     <Col className='skills__col1'>

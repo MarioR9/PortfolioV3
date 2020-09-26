@@ -1,11 +1,12 @@
 import React from 'react'
 import '../css/Navigation.css'
 import Logo from '../assets/Mlogo2.png'
+import { Link } from "react-scroll";
 
 const Navigation = () => {
     const links =["Home","About","Skills","Experience","Portfolio"]
     return (
-        <div className='nav'>
+        <div className='nav' >
             <div>
             <div>
             <a href='/home'>
@@ -15,7 +16,7 @@ const Navigation = () => {
             </div>
             <div className="nav__links">
                 {links.map(link =>
-                <a key={link} href={`/${link.toLowerCase()}`}><li>{link}</li></a >
+                <Link key={link} to={link.toLowerCase()} smooth={true} duration={1000} href={`/${link.toLowerCase()}`}><li>{link}</li></Link>
                 )}
             </div>
         </div>
