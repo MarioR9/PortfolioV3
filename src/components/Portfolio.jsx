@@ -16,6 +16,8 @@ const Portfolio = () => {
     const pages = [translateme,tonester,uber,portfoliov1,rickandmorty1, portfoliov2, marsrover, portfoliov3]
    
     return (
+        <div  id='portfolio'>
+       
         <Container 
         data-aos="fade-up" 
         data-aos-delay="30"  
@@ -23,7 +25,7 @@ const Portfolio = () => {
         data-aos-offset="200"
         data-aos-duration="1800"
         >
-        <div className='portfolio' id='portfolio'>
+        <div className='portfolio'>
             <div className='portfolio__header'>
                  <h3 >Recent Projects</h3>
             </div>
@@ -40,6 +42,8 @@ const Portfolio = () => {
             </div>
         </div>
         </Container>
+             
+        </div>
     )
 }
 export default Portfolio;

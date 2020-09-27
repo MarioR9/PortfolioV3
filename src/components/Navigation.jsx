@@ -18,13 +18,7 @@ const Navigation = () => {
             </div>
             <div className="nav__links">
                 {links.map(link =>
-                <Link 
-                data-aos="slide-left" 
-        data-aos-delay="30"  
-        data-aos-easing="ease-in-out"
-        data-aos-offset="200"
-        data-aos-duration="1800"
-                key={link} to={link.toLowerCase()} smooth={true} duration={1300} href={`/${link.toLowerCase()}`}><li>{link}</li></Link>
+                <Link key={link} to={link.toLowerCase()} offset={-100} smooth={true} duration={1300} href={`/${link.toLowerCase()}`}><li>{link}</li></Link>
                 )}
             </div>
         </div>

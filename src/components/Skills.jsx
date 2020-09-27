@@ -45,7 +45,14 @@ const Skills = () => {
                              <p>{skill.name}</p>
                              <p>{skill.percentage}</p>
                              <div className='skills__progessbarback'>
-                             <div style={{width: `${skill.percentage}` }} className='skills__progessbar'></div>
+                             <div className='skills__info'
+                              data-aos="zoom-in-right" 
+                              data-aos-delay="30"  
+                              data-aos-easing="ease-in-out"
+                              data-aos-offset="200"
+                              data-aos-duration="1800"
+                              className='skills__info'
+                             style={{width: `${skill.percentage}` }} className='skills__progessbar'></div>
                              </div>
                              </div>        
                             )}
