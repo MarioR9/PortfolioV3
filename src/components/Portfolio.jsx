@@ -9,13 +9,19 @@ import portfoliov2 from '../assets/portfoliov2.png'
 import marsrover from '../assets/marsrover.png'
 import portfoliov3 from "../assets/portfoliov3.png";
 
-import { Container, Fade } from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 
 const Portfolio = () => {
     const pages = [translateme,tonester,uber,portfoliov1,rickandmorty1, portfoliov2, marsrover, portfoliov3]
    
     return (
-        <Container>
+        <Container 
+        data-aos="fade-up" 
+        data-aos-delay="30"  
+        data-aos-easing="ease-in-out"
+        data-aos-offset="200"
+        data-aos-duration="1800"
+        >
         <div className='portfolio' id='portfolio'>
             <div className='portfolio__header'>
                  <h3 >Recent Projects</h3>

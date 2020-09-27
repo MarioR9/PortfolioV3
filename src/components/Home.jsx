@@ -7,7 +7,13 @@ const Home = () => {
     const name = {first: 'Mario', last: "Rodriguez"}
     const details = {email: "mariorodriguezan@gmail.com",phone: "+1 571-251-7280", location: 'Washington, DC'}
     return (
-        <div className='home' id='home'>
+        <div className='home' id='home' 
+        data-aos="fade-up" 
+        data-aos-delay="30"  
+        data-aos-easing="ease-in-out"
+        data-aos-offset="200"
+        data-aos-duration="1800"
+        >
             <Container>
                 <Row>
                     <Col className='home__col2'>  

@@ -8,7 +8,13 @@ const Experience = () => {
      
     
     return (
-        <div id="experience">
+        <div id="experience" 
+        data-aos="fade-up" 
+        data-aos-delay="30"  
+        data-aos-easing="ease-in-out"
+        data-aos-offset="200"
+        data-aos-duration="1800"
+        >
             <Container className='exp'>
                 <Row>
                     <Col>

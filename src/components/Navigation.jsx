@@ -6,7 +6,13 @@ import { Link } from "react-scroll";
 const Navigation = (props) => {
     const links =["Home","About","Skills","Experience","Portfolio"]
     return (
-        <div className='nav' >
+        <div className='nav' 
+        data-aos="fade-up" 
+        data-aos-delay="30"  
+        data-aos-easing="ease-in-out"
+        data-aos-offset="200"
+        data-aos-duration="1800"
+        >
             <div>
             <div>
             <a href='/home'>
