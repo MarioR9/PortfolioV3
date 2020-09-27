@@ -10,6 +10,11 @@ const Navigation = () => {
     return (
         <div className='nav' >
             <div>
+            <div className='nav__menu'>
+            <i class="fas fa-bars"></i>
+            </div>
+            </div>
+            <div>
             <div>
             <a href='/home'>
              <img className='nav__logo' src={Logo} alt='logo'/>
