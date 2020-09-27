@@ -3,7 +3,9 @@
     align-items: center;
     margin: auto;
     background-color: #110f17;
-    
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 .nav__logo {
     margin-left: 14vw;

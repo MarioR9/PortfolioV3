@@ -1,12 +1,27 @@
 import React from 'react'
 import '../css/Skills.css'
-import { Container, Row, Col, Fade } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 const Skills = () => {
+    const skills = [
+                    {name:"Bootstrap UI", 
+                    percentage: "80%"},
+                    {name:"Semantic UI", 
+                    percentage: "75%"},
+                    {name:"React", 
+                    percentage: "78%"},
+                    {name:"Ruby on Rails", 
+                    percentage: "75%"},
+                    {name:"Javascript", 
+                    percentage: "70%"},
+                    {name:"Java", 
+                    percentage: "35%"},
+                
+                ]
     return (
-        <div>
-            <div className='skills' id='skills' 
+        <div id='skills'>
+            <div className='skills'  
              data-aos="fade-up" 
              data-aos-delay="30"  
              data-aos-easing="ease-in-out"
@@ -19,48 +34,21 @@ const Skills = () => {
                     <h3>Technical Skills</h3>
                     <div>
                         <div className='skills__details'>
-                            <div className='skills__info'>
-                            <p>Bootstrap UI</p>
-                            <p>80%</p>
-                            <div className='skills__progessbarback'>
-                            <div style={{width: "80%" }} className='skills__progessbar'></div>
-                            </div>
-                            </div>
-                            <div className='skills__info'>
-                            <p>Semantic UI</p>
-                            <p>75%</p>
-                            <div className='skills__progessbarback'>
-                            <div style={{width: "75%" }} className='skills__progessbar'></div>
-                            </div>
-                            </div>
-                            <div className='skills__info'>
-                            <p>React</p>
-                            <p>78%</p>
-                            <div className='skills__progessbarback'>
-                            <div style={{width: "78%" }} className='skills__progessbar'></div>
-                            </div>
-                            </div>
-                            <div className='skills__info'>
-                            <p>Ruby on Rails</p>
-                            <p>75%</p>
-                            <div className='skills__progessbarback'>
-                            <div style={{width: "75%" }} className='skills__progessbar'></div>
-                            </div>
-                            </div>
-                            <div className='skills__info'>
-                            <p>Javascript</p>
-                            <p>70%</p>
-                            <div className='skills__progessbarback'>
-                            <div style={{width: "70%" }} className='skills__progessbar'></div>
-                            </div>
-                            </div>
-                            <div className='skills__info'>
-                            <p>Java</p>
-                            <p>35%</p>
-                            <div className='skills__progessbarback'>
-                            <div style={{width: "35%" }} className='skills__progessbar'></div>
-                            </div>
-                            </div>
+                            {skills.map( skill =>
+                             <div 
+                             data-aos="zoom-in-right" 
+                             data-aos-delay="30"  
+                             data-aos-easing="ease-in-out"
+                             data-aos-offset="200"
+                             data-aos-duration="1800"
+                             className='skills__info'>
+                             <p>{skill.name}</p>
+                             <p>{skill.percentage}</p>
+                             <div className='skills__progessbarback'>
+                             <div style={{width: `${skill.percentage}` }} className='skills__progessbar'></div>
+                             </div>
+                             </div>        
+                            )}
                         </div>
                     </div>
                     
@@ -70,7 +58,13 @@ const Skills = () => {
                     <div className='container2'>
                         <Container>
                             <Row>
-                                <Col className='skills__circles'>
+                                <Col 
+                                data-aos="flip-right" 
+                                data-aos-delay="30"  
+                                data-aos-easing="ease-in-out"
+                                data-aos-offset="200"
+                                data-aos-duration="1800" 
+                                className='skills__circles'>
                                 <div >
                                     <svg viewBox="0 0 100 100" height='120'>
                                     <circle cx="50" cy="50" r="40" stroke="#c7c6c699" stroke-width="5" fill-opacity="0" />
@@ -80,7 +74,13 @@ const Skills = () => {
                                     <p>Communication</p>
                                 </div>
                                 </Col>
-                                <Col className='skills__circles'>
+                                <Col 
+                                data-aos="flip-left" 
+                                data-aos-delay="30"  
+                                data-aos-easing="ease-in-out"
+                                data-aos-offset="200"
+                                data-aos-duration="1800" 
+                                className='skills__circles'>
                                 <div>
                                     <svg viewBox="0 0 100 100" height='120'>
                                     <circle cx="50" cy="50" r="40" stroke="#c7c6c699" stroke-width="5" fill-opacity="0" />
@@ -92,7 +92,13 @@ const Skills = () => {
                                 </Col>
                             </Row>
                             <Row>
-                                <Col className='skills__circles'>
+                                <Col 
+                                data-aos="flip-right" 
+                                data-aos-delay="30"  
+                                data-aos-easing="ease-in-out"
+                                data-aos-offset="200"
+                                data-aos-duration="1800" 
+                                className='skills__circles'>
                                 <div>
                                     <svg viewBox="0 0 100 100" height='120'>
                                     <circle cx="50" cy="50" r="40" stroke="#c7c6c699" stroke-width="5" fill-opacity="0" />
@@ -102,7 +108,13 @@ const Skills = () => {
                                     <p>Problem solving</p>
                                 </div>
                                 </Col>
-                                <Col className='skills__circles'>
+                                <Col 
+                                data-aos="flip-left" 
+                                data-aos-delay="30"  
+                                data-aos-easing="ease-in-out"
+                                data-aos-offset="200"
+                                data-aos-duration="1800" 
+                                className='skills__circles'>
                                 <div>
                                     <svg viewBox="0 0 100 100" height='120'>
                                     <circle cx="50" cy="50" r="40" stroke="#c7c6c699" stroke-width="5" fill-opacity="0" />

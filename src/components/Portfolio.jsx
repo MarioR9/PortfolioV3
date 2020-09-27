@@ -12,6 +12,7 @@ import portfoliov3 from "../assets/portfoliov3.png";
 import { Container} from 'react-bootstrap';
 
 const Portfolio = () => {
+    
     const pages = [translateme,tonester,uber,portfoliov1,rickandmorty1, portfoliov2, marsrover, portfoliov3]
    
     return (
@@ -28,7 +29,13 @@ const Portfolio = () => {
             </div>
            <div className='portfolio__grid'>
                 {pages.map(page =>
-                <ul key={page}><img className='portfolio__img' src={page} alt={page}/></ul>
+                <ul 
+                        data-aos="zoom-in" 
+                        data-aos-delay="30"  
+                        data-aos-easing="ease-in-out"
+                        data-aos-offset="200"
+                        data-aos-duration="1800"
+                key={page}><img className='portfolio__img' src={page} alt={page}/></ul>
                 )}  
             </div>
         </div>

@@ -1,13 +1,13 @@
 .exp {
     color: white;
-    margin-top: 8%;
+    margin-top: 10%;
 }
 .exp h3 {
     color: white;
     font-family: "roboto", sans-serif;
     font-size: 30px;
     height:auto;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
 }
 .exp__education {
     transition: 2.5s;

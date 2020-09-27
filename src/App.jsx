@@ -10,8 +10,7 @@ import Home from './components/Home'
 
 const App=()=>{
   return (
-    //single page application
-    <div className="App" 
+    <div id='home'
     data-aos="fade-up" 
     data-aos-delay="30"  
     data-aos-easing="ease-in-out"
@@ -29,21 +28,4 @@ const App=()=>{
 
 export default App;
 
-    /* ===================
-           NAVIGATION
-        =================== */
-    /* ===================
-           HOME
-        =================== */
-    /* ===================
-           ABOUT
-        =================== */
-    /* ===================
-           SKILLS
-        =================== */  
-    /* ===================
-           EXPERIENCE
-        =================== */
-    /* ===================
-           PORTFOLIO
-        =================== */                            
+         
