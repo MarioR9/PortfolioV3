@@ -1,65 +1,64 @@
 .nav {
-    justify-content: space-around;
-    align-items: center;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  background-color: #110f17;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav__logo {
+  margin-left: 14vw;
+  height: 80px;
+  object-fit: contain;
+}
+.nav__menu {
+  display: none;
+}
+.nav__links {
+  margin-right: 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__links li {
+  font-weight: bold;
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  opacity: 1;
+  line-height: 30px;
+  color: white;
+  display: inline;
+  list-style: none;
+  padding-left: 20px;
+}
+.nav__links li:hover {
+  color: #11bb9f;
+  transition: 0.7s;
+}
+.nav__links a {
+  color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+  .nav__logo {
+    display: none;
+  }
+  .nav__menu {
+    display: inline;
+    justify-content: left;
     margin: auto;
+    font-size: 3em;
+    color: #11bb9f;
+  }
+  .nav {
     background-color: #110f17;
     position: sticky;
     top: 0;
     z-index: 100;
-}
-.nav__logo {
-    margin-left: 14vw;
-    height: 80px;
-    object-fit: contain;
-}
-.nav__menu {
-    display: none;
-}
-.nav__links {
-    margin-right: 13%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav__links li {
-    font-weight: bold;
-    font-family: "roboto", sans-serif;
-    font-size: 18px;
-    opacity: 1;
-    line-height: 30px;
-    color: white;
-    display: inline;
-    list-style: none;
-    padding-left: 20px;
-}
-.nav__links li:hover {
-    color:#11bb9f;
-    transition: 0.7s;
-}
-.nav__links a {
-    color: transparent;
-}
-
-@media screen and (max-width: 768px) {
-    .nav__links  {
-        display: none;
-    }
-    .nav__logo {
-       display: none;
-    }
-    .nav__menu {
-        display: inline;
-        justify-content: left;
-        margin: auto;
-        font-size: 3em;
-        color: #11bb9f;
-    }
-    .nav {
-        background-color: #110f17;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-    }
   }
-
+}

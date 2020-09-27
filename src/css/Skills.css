@@ -1,75 +1,72 @@
 .skills {
-    font-family: "roboto", sans-serif;
-    margin-top: 10%;
-    text-align: center;
-    color: white;
-    
+  font-family: "roboto", sans-serif;
+  margin-top: 10%;
+  text-align: center;
+  color: white;
 }
 .skills h3 {
-    margin-bottom: 15%;
+  margin-bottom: 15%;
 }
 .skills__info {
-    display: flex;
-    padding: 5px;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
 }
 .skills__progessbar {
-    position: absolute;
-    height: 7px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background: #0bceaf;
-    
+  position: absolute;
+  height: 7px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #0bceaf;
 }
 .skills__progessbarback {
-    background: #c7c6c699;
-    position: absolute;
-    width: 100%;
-    height: 7px;
-    margin: 30px 0 1px;
-    border-radius: 10px;
+  background: #c7c6c699;
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  margin: 30px 0 1px;
+  border-radius: 10px;
 }
-.skills__percent{
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    padding: 0px;
-    margin: 0px;
-    transform: translate(-50%, -50%);
+.skills__percent {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  padding: 0px;
+  margin: 0px;
+  transform: translate(-50%, -50%);
 }
 .skills__circlePercentage0 {
-    stroke-dasharray: 240%;
-    stroke-dashoffset: 15%;
+  stroke-dasharray: 240%;
+  stroke-dashoffset: 15%;
 }
 .skills__circlePercentage1 {
-    stroke-dasharray: 250%;
-    stroke-dashoffset: 15%;
+  stroke-dasharray: 250%;
+  stroke-dashoffset: 15%;
 }
-.skills__circlePercentage2{
-    stroke-dasharray: 245%;
-    stroke-dashoffset: 15%;
+.skills__circlePercentage2 {
+  stroke-dasharray: 245%;
+  stroke-dashoffset: 15%;
 }
-.skills__circlePercentage3{
-    stroke-dasharray: 240%;
-    stroke-dashoffset: 15%;
+.skills__circlePercentage3 {
+  stroke-dasharray: 240%;
+  stroke-dashoffset: 15%;
 }
 @media screen and (max-width: 768px) {
-    
-    .skills__col1 {
-        margin-top: 20%;
-        color: white;
-    }
-    .skills__col2 {
-        margin-top: 20%;
-        color: white;
-    }
-    .skills__details {
-        min-width: 60vw;
-    }
-    .skills__percent{
-        padding: 2px;
-    }
+  .skills__col1 {
+    margin-top: 20%;
+    color: white;
+  }
+  .skills__col2 {
+    margin-top: 20%;
+    color: white;
+  }
+  .skills__details {
+    min-width: 60vw;
+  }
+  .skills__percent {
+    padding: 2px;
+  }
 }
