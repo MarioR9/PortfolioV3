@@ -15,7 +15,6 @@
   display: flex;
   float: right;
 }
-
 .nav__links li {
   font-weight: bold;
   font-family: "roboto", sans-serif;
@@ -44,7 +43,7 @@
 }
 
 #toggle{
-  display: flex;
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -56,15 +55,15 @@
     cursor: pointer;
   }
   .nav__links {
-    text-align: center;
     width: 100%;
+    height: 200px;
     padding: 1%;
     margin: 0;
-    display: flex;
+    display: none;
   }
  
   #toggle:checked + .nav__links{
-    display: block;
+    display: grid;
   }
   .nav {
     background-color: #110f17;

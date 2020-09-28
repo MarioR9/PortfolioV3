@@ -15,21 +15,17 @@ const Navigation = () => {
             <img className="nav__logo" src={Logo} alt="logo" />
           </a>
       </div>
-      <div >
-          <label className="nav__menu" for='toggle'>&#9776;</label>
-          <input type='checkbox' id='toggle'></input>
-        </div>
-      <div >
+      <label className="nav__menu" for='toggle'>&#9776;</label>
+      <input type='checkbox' id='toggle'></input>
+      <div className="nav__links">
         {links.map((link) => (
           <Link
-            className="nav__links"
             key={link}
             to={link.toLowerCase()}
             offset={-100}
             smooth={true}
             duration={1300}
-            href={`/${link.toLowerCase()}`}
-          >
+            href={`/${link.toLowerCase()}`}>
             <li>{link}</li>
           </Link>
         ))}
