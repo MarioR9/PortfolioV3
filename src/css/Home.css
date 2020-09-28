@@ -92,7 +92,7 @@
   padding-right: 15px;
 }
 .home__avatar {
-  max-width: 360px;
+  max-width: auto;
   max-height: 360px;
   border-radius: 50%;
   padding: 20px;

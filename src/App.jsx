@@ -6,12 +6,12 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import Home from "./components/Home";
-import { Container } from "react-bootstrap";
 
 const App = () => {
   return (
     <div
       id="home"
+      className='app'
       data-aos="fade-up"
       data-aos-delay="30"
       data-aos-easing="ease-in-out"

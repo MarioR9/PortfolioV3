@@ -1,6 +1,6 @@
 import React from "react";
 import "../css/Navigation.css";
-import Logo from "../assets/Mlogo2.png";
+import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
 import { Container } from "react-bootstrap";
 
@@ -10,7 +10,7 @@ const Navigation = () => {
   return (
     <div className="nav">
       <Container>
-      <div>
+      <div >
           <a href="/home">
             <img className="nav__logo" src={Logo} alt="logo" />
           </a>
