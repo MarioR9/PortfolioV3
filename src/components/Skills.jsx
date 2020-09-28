@@ -19,7 +19,7 @@ const Skills = () => {
         data-aos-delay="30"
         data-aos-easing="ease-in-out"
         data-aos-offset="200"
-        data-aos-duration="1800"
+        data-aos-duration="1500"
       >
         <Container>
           <Row>
@@ -28,7 +28,7 @@ const Skills = () => {
               <div>
                 <div className="skills__details">
                   {skills.map((skill) => (
-                    <div
+                    <div key={skill.name}
                       data-aos="zoom-in-right"
                       data-aos-delay="30"
                       data-aos-easing="ease-in-out"

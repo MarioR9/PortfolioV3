@@ -10,7 +10,7 @@ const Navigation = () => {
     <div className="nav">
       <div>
         <div className="nav__menu">
-          <i class="fas fa-bars"></i>
+          <i className="fas fa-bars"></i>
         </div>
       </div>
       <div>

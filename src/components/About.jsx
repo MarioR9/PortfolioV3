@@ -24,21 +24,21 @@ const About = () => {
       animation: "fade-right",
       title: "Frontend Development",
       description:
-        "Building mobile responsive frontend websites u",
+        "Build mobile and desktop responsive websites utilizing the latest technologies compatible with popular browsers. CSS, HTML, JavaScript, as well as frameworks like react, redux, angular ",
       icon: <i className="fa fa-code iron-color"></i>,
     },
     {
       animation: "fade-up",
       title: "Backend Development",
       description:
-        "I design attractive and convenient interface for users. Foucusing on your business to make sure the desing enhances customers experience.",
+        "Design and architecture of server-side web application logic and integration. Dada base design as well as API development.",
       icon: <i className="fas fa-server"></i>,
     },
     {
       animation: "fade-left",
       title: "UI Design",
       description:
-        "I design a product that is attractive and convenient for users. Creating an interactive design that facilitates an enjoyable experience for business's websites.",
+        "Design a product that is attractive and convenient for users. Crafting an interactive structure that facilitates an enjoyable experience for business's websites.",
       icon: <i className="fas fa-pencil-ruler"></i>,
     },
   ];
@@ -92,7 +92,7 @@ const About = () => {
                 >
                   Resume
                   &nbsp;
-                  <i class="fas fa-download"></i>
+                  <i className="fas fa-download"></i>
                 </a>
               </div>
             </div>
