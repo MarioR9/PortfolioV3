@@ -30,7 +30,7 @@ const Portfolio = () => {
         data-aos-delay="30"
         data-aos-easing="ease-in-out"
         data-aos-offset="200"
-        data-aos-duration="1500"
+        data-aos-duration="1200"
       >
         <div className="portfolio">
           <div className="portfolio__header">
@@ -43,7 +43,7 @@ const Portfolio = () => {
                 data-aos-delay="30"
                 data-aos-easing="ease-in-out"
                 data-aos-offset="200"
-                data-aos-duration="1500"
+                data-aos-duration="1200"
                 key={page}
               >
                 <img className="portfolio__img" src={page} alt={page} />

@@ -2,27 +2,27 @@ import React from "react";
 import "../css/Navigation.css";
 import Logo from "../assets/Mlogo2.png";
 import { Link } from "react-scroll";
+import { Container } from "react-bootstrap";
 
 const Navigation = () => {
   const links = ["Home", "About", "Skills", "Experience", "Portfolio"];
 
   return (
     <div className="nav">
+      <Container>
       <div>
-        <div className="nav__menu">
-          <i className="fas fa-bars"></i>
-        </div>
-      </div>
-      <div>
-        <div>
           <a href="/home">
             <img className="nav__logo" src={Logo} alt="logo" />
           </a>
-        </div>
       </div>
-      <div className="nav__links">
+      <div >
+          <label className="nav__menu" for='toggle'>&#9776;</label>
+          <input type='checkbox' id='toggle'></input>
+        </div>
+      <div >
         {links.map((link) => (
           <Link
+            className="nav__links"
             key={link}
             to={link.toLowerCase()}
             offset={-100}
@@ -34,6 +34,7 @@ const Navigation = () => {
           </Link>
         ))}
       </div>
+      </Container>
     </div>
   );
 };
