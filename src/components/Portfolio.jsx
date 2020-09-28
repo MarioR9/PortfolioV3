@@ -9,7 +9,15 @@ import portfoliov2 from "../assets/portfoliov2.png";
 import marsrover from "../assets/marsrover.png";
 import portfoliov3 from "../assets/portfoliov3.png";
 
-import { Container,Button,Modal } from "react-bootstrap";
+import Button from '@material-ui/core/Button';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { useTheme } from '@material-ui/core/styles';
+import { Container } from "react-bootstrap";
 
 const Portfolio = () => {
   const pages = [
@@ -23,12 +31,20 @@ const Portfolio = () => {
     portfoliov3,
   ];
 
-  const [show, setShow] = useState(false);
+  const [open, setOpen] = useState(false);
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down('sm'));
+ 
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   const data = {
-                translateme:{ Title: "Translateme", description: "", technologies:[],images:[]},
+                translateme:{ Title: "Translateme", description: "Translate me uses a machine learning technology to classify and translate images into different languages. Once the image is captured, users can flip the image to reveal the desired translated word for the image.", technologies:['Javascript','React','RubyonRails', 'IBMWatson','Cloudinary','SemanticUI'],images:['https://raw.githubusercontent.com/MarioR9/TranslateMeFrontend/master/ReadmeImages/main.png','https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/categories.png','https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/categoryCards.png','https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/selectLanguage.png']},
                 rickandMorty:{ Title: "rickandMorty", description: "", technologies:[],images:[]}, 
               }
   return (
@@ -40,21 +56,27 @@ const Portfolio = () => {
         data-aos-offset="200"
         data-aos-duration="1200"
       >
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>lol</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
+        <Container>
+        <Dialog
+        fullScreen={fullScreen}
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="responsive-dialog-title"
+      >
+        <DialogTitle id="responsive-dialog-title">{"Use Google's location service?"}</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            contente Here
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+         
+          <Button onClick={handleClose} color="primary" autoFocus>
+            Agree
           </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal>  
-
+        </DialogActions>
+        </Dialog>
+        </Container>
         <div className="portfolio">
           <div className="portfolio__header">
             <h3>Recent Projects</h3>
@@ -69,7 +91,7 @@ const Portfolio = () => {
                 data-aos-duration="1200"
                 key={page}
               >
-                <img onClick={handleShow} className="portfolio__img" src={page} alt={page} />
+                <img onClick={handleClickOpen} className="portfolio__img" src={page} alt={page} />
               </ul>
             ))}
           </div>
