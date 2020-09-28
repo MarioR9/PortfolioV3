@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import Home from "./components/Home";
+import { Container } from "react-bootstrap";
 
 const App = () => {
   return (
