@@ -48,40 +48,6 @@ const Portfolio = () => {
 
   const handleClose = () => setShow(false);
 
-  const body = (
-    <div>
-      <Container>
-        <Row>
-          <Col>
-            <h2>{data["translateme"].Title}</h2>
-            <p>{data["translateme"].description}</p>
-            <div className="portfolio__tech">
-              <Row>
-                {data["translateme"].technologies.map((tech) => (
-                  <li
-                    data-aos="fade-up"
-                    data-aos-delay="40"
-                    data-aos-easing="ease-in-out"
-                    data-aos-offset="100"
-                    data-aos-duration="1800"
-                    key={tech}
-                  >
-                    <span>{tech}</span>
-                  </li>
-                ))}
-              </Row>
-            </div>
-          </Col>
-          <Col>
-            {data["translateme"].images.map((img) => (
-              <img className="portfolio__img" src={img} />
-            ))}
-          </Col>
-        </Row>
-      </Container>
-    </div>
-  );
-
   return (
     <div id="portfolio">
       <Container
@@ -122,20 +88,6 @@ const Portfolio = () => {
                           </li>
                         ))}
                       </Row>
-                    </div>
-                    <div>
-                      <ul className="portfolio__social">
-                        <li>
-                          <a href="https://github.com/MarioR9/TranslateMeFrontend">
-                            <i className="fab fa-github fa-lg"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.youtube.com/watch?v=M7LLMVlS6hg&feature=emb_logo">
-                            <i class="fab fa-youtube fa-lg"></i>
-                          </a>
-                        </li>
-                      </ul>
                     </div>
                   </Col>
                   <Col>

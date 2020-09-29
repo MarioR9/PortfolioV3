@@ -49,8 +49,8 @@
 .portfolio__img {
   padding: 4%;
   object-fit: contain;
-  max-width: 100%;
-  min-width: 500px;
+  max-width: 640px;
+  min-width: 375px;
   height: auto;
 }
 .portfolio__modalContainer {
@@ -79,27 +79,18 @@ border-bottom: transparent;
   overflow-y: auto;
 }
 
-.portfolio__social a {
-  color: inherit;
-}
-.portfolio__social li {
-  display: inline-block;
-  color: white;
-  list-style: none;
-  list-style-type: disc;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 20px;
-  padding-inline-end: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-radius: 15%;
-}
-.portfolio__social li:hover {
-  background-color: white;
-  color: #0bceaf;
-  transition: 0.5s;
-}
 .close {
   color: white;
+}
+
+@media screen and (max-width: 992px) {
+ 
+    .portfolio__img {
+      padding: 4%;
+      object-fit: contain;
+      max-width: 100%;
+      min-width: 375px;
+      height: auto;
+    }
+  
 }
