@@ -42,9 +42,17 @@ const Portfolio = () => {
         "https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/categoryCards.png",
         "https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/selectLanguage.png",
       ],
-    },social: {
-      icon:<i className="fab fa-github fa-lg"></i>, link: 'https://github.com/MarioR9/TranslateMeFrontend'
-    }
+      social: [
+        {
+        icon: <i className="fab fa-github portfolio__fa-lg"></i>, 
+        link: 'https://github.com/MarioR9/TranslateMeFrontend'
+        },
+        {
+        icon: <i className="fab fa-youtube portfolio__fa-lg" ></i>, 
+        link: 'https://www.youtube.com/watch?v=M7LLMVlS6hg&feature=emb_logo'
+        },
+    ]
+    },
   };
   const [show, setShow] = useState(false);
 
@@ -111,17 +119,14 @@ const Portfolio = () => {
                      data-aos-offset="100"
                      data-aos-duration="1800"
                     >
-                          <ul className="portfolio__social">
-                            <li>
-                              <a href="https://github.com/MarioR9">
-                                <i className="fab fa-github fa-lg"></i>
-                              </a>
-                            </li>
-                            <li>
-                              <a href="https://www.linkedin.com/in/mario-rodriguezan/">
-                              <i class="fab fa-youtube fa-lg" ></i>
-                              </a>
-                            </li>
+                      <ul className="portfolio__social">
+                          {data["translateme"].social.map(tech => 
+                            <li key={tech.length}>
+                            <a key={tech.length} href={tech.link}>
+                              {tech.icon}
+                            </a>
+                          </li>
+                          )}
                           </ul>
                         </div>
                   </Col>
@@ -133,7 +138,7 @@ const Portfolio = () => {
                    data-aos-duration="1800"
                   >
                     {data["translateme"].images.map((img) => (
-                      <img className="portfolio__img" src={img} />
+                      <img key={img.length} className="portfolio__img" src={img} />
                     ))}
                   </Col>
                 </Row>
