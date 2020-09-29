@@ -42,7 +42,9 @@ const Portfolio = () => {
         "https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/categoryCards.png",
         "https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/selectLanguage.png",
       ],
-    },
+    },social: {
+      icon:<i className="fab fa-github fa-lg"></i>, link: 'https://github.com/MarioR9/TranslateMeFrontend'
+    }
   };
   const [show, setShow] = useState(false);
 
@@ -70,9 +72,22 @@ const Portfolio = () => {
             <Modal.Body centered scrollable>
               <Container>
                 <Row>
-                  <Col>
-                    <h2>{data["translateme"].Title}</h2>
-                    <p>{data["translateme"].description}</p>
+                  <Col
+                  >
+                    <h2
+                    data-aos="fade-down"
+                    data-aos-delay="40"
+                    data-aos-easing="ease-in-out"
+                    data-aos-offset="100"
+                    data-aos-duration="1200"
+                    >{data["translateme"].Title}</h2>
+                    <p
+                    data-aos="fade-down"
+                    data-aos-delay="40"
+                    data-aos-easing="ease-in-out"
+                    data-aos-offset="100"
+                    data-aos-duration="1200"
+                    >{data["translateme"].description}</p>
                     <div className="portfolio__tech">
                       <Row>
                         {data["translateme"].technologies.map((tech) => (
@@ -81,7 +96,7 @@ const Portfolio = () => {
                             data-aos-delay="40"
                             data-aos-easing="ease-in-out"
                             data-aos-offset="100"
-                            data-aos-duration="1800"
+                            data-aos-duration="1200"
                             key={tech}
                           >
                             <span>{tech}</span>
@@ -89,8 +104,34 @@ const Portfolio = () => {
                         ))}
                       </Row>
                     </div>
+                    <div 
+                     data-aos="fade-up"
+                     data-aos-delay="40"
+                     data-aos-easing="ease-in-out"
+                     data-aos-offset="100"
+                     data-aos-duration="1800"
+                    >
+                          <ul className="portfolio__social">
+                            <li>
+                              <a href="https://github.com/MarioR9">
+                                <i className="fab fa-github fa-lg"></i>
+                              </a>
+                            </li>
+                            <li>
+                              <a href="https://www.linkedin.com/in/mario-rodriguezan/">
+                              <i class="fab fa-youtube fa-lg" ></i>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
                   </Col>
-                  <Col>
+                  <Col
+                   data-aos="fade-down"
+                   data-aos-delay="40"
+                   data-aos-easing="ease-in-out"
+                   data-aos-offset="100"
+                   data-aos-duration="1800"
+                  >
                     {data["translateme"].images.map((img) => (
                       <img className="portfolio__img" src={img} />
                     ))}
