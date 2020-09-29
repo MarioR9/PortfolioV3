@@ -10,24 +10,48 @@ import portfoliov2 from "../assets/portfoliov2.png";
 import marsrover from "../assets/marsrover.png";
 import portfoliov3 from "../assets/portfoliov3.png";
 
-import { Container, Row, Col, Modal, Button } from "react-bootstrap";
+import { Container, Row, Col, Modal } from "react-bootstrap";
 
 const Portfolio = () => {
   const pages = [
-    translateme,
-    tonester,
-    uber,
-    portfoliov1,
-    rickandmorty1,
-    portfoliov2,
-    marsrover,
-    portfoliov3,
+    {
+      img: translateme,
+      name: "Translateme",
+    },
+    {
+      img: tonester,
+      name: "tonester",
+    },
+    {
+      img: uber,
+      name: "uber",
+    },
+    {
+      img: portfoliov1,
+      name: "portfoliov1",
+    },
+    {
+      img: rickandmorty1,
+      name: "rickandmorty1",
+    },
+    {
+      img: portfoliov2,
+      name: "portfoliov2",
+    },
+    {
+      img: marsrover,
+      name: "marsrover",
+    },
+    {
+      img: portfoliov3,
+      name: "portfoliov3",
+    },
   ];
-  const data = {
-    translateme: {
-      Title: "Translateme",
+  const projects = [
+    {
+      title: "Translateme",
       description:
-        "Translate me uses a machine learning technology to classify and translate images into different languages. Once the image is captured, users can flip the image to reveal the desired translated word for the image.",
+        "Translateme uses a machine learning technology to classify and translate images into different languages. Once the image is captured, users can flip the image to reveal the desired translated word for the image.",
       technologies: [
         "Javascript",
         "React",
@@ -44,18 +68,22 @@ const Portfolio = () => {
       ],
       social: [
         {
-        icon: <i className="fab fa-github portfolio__fa-lg"></i>, 
-        link: 'https://github.com/MarioR9/TranslateMeFrontend'
+          icon: <i className="fab fa-github portfolio__fa-lg"></i>,
+          link: "https://github.com/MarioR9/TranslateMeFrontend",
         },
         {
-        icon: <i className="fab fa-youtube portfolio__fa-lg" ></i>, 
-        link: 'https://www.youtube.com/watch?v=M7LLMVlS6hg&feature=emb_logo'
+          icon: <i className="fab fa-youtube portfolio__fa-lg" ></i>,
+          link: "https://www.youtube.com/watch?v=M7LLMVlS6hg&feature=emb_logo",
         },
-    ]
+      ],
     },
+  ];
+  const [currentProject, setProject] = useState([])
+  const handledSelectedProject = (e) => {
+    setShow(true);
+    setProject(projects.find((project) => project.title == e.target.alt));
   };
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
 
   return (
@@ -80,25 +108,33 @@ const Portfolio = () => {
             <Modal.Body centered scrollable>
               <Container>
                 <Row>
-                  <Col
-                  >
+                  <Col>
                     <h2
-                    data-aos="fade-down"
-                    data-aos-delay="40"
-                    data-aos-easing="ease-in-out"
-                    data-aos-offset="100"
-                    data-aos-duration="1200"
-                    >{data["translateme"].Title}</h2>
+                      data-aos="fade-down"
+                      data-aos-delay="40"
+                      data-aos-easing="ease-in-out"
+                      data-aos-offset="100"
+                      data-aos-duration="1200"
+                    >
+                      {currentProject.title}
+                    </h2>
                     <p
-                    data-aos="fade-down"
-                    data-aos-delay="40"
-                    data-aos-easing="ease-in-out"
-                    data-aos-offset="100"
-                    data-aos-duration="1200"
-                    >{data["translateme"].description}</p>
+                      data-aos="fade-down"
+                      data-aos-delay="40"
+                      data-aos-easing="ease-in-out"
+                      data-aos-offset="100"
+                      data-aos-duration="1200"
+                    >
+                      {currentProject.description}
+                    </p>
                     <div className="portfolio__tech">
                       <Row>
-                        {data["translateme"].technologies.map((tech) => (
+                        {
+                        currentProject.length === 0  
+                        ?
+                        null
+                        :
+                        currentProject.technologies.map(tech => 
                           <li
                             data-aos="fade-up"
                             data-aos-delay="40"
@@ -109,26 +145,31 @@ const Portfolio = () => {
                           >
                             <span>{tech}</span>
                           </li>
-                        ))}
+                        )}
                       </Row>
                     </div>
-                    <div 
-                     data-aos="fade-up"
-                     data-aos-delay="40"
-                     data-aos-easing="ease-in-out"
-                     data-aos-offset="100"
-                     data-aos-duration="1800"
+                    <div
+                      data-aos="fade-up"
+                      data-aos-delay="40"
+                      data-aos-easing="ease-in-out"
+                      data-aos-offset="100"
+                      data-aos-duration="1800"
                     >
                       <ul className="portfolio__social">
-                          {data["translateme"].social.map(tech => 
-                            <li key={tech.length}>
+                        {
+                        currentProject.length === 0
+                        ?
+                        null
+                        :  
+                        currentProject.social.map(tech => 
+                          <li key={tech.length}>
                             <a key={tech.length} href={tech.link}>
                               {tech.icon}
                             </a>
                           </li>
-                          )}
-                          </ul>
-                        </div>
+                        )}
+                      </ul>
+                    </div>
                   </Col>
                   <Col
                    data-aos="fade-down"
@@ -137,9 +178,13 @@ const Portfolio = () => {
                    data-aos-offset="100"
                    data-aos-duration="1800"
                   >
-                    {data["translateme"].images.map((img) => (
+                    {currentProject.length === 0 
+                    ? 
+                    null
+                    :
+                    currentProject.images.map(img => 
                       <img key={img.length} className="portfolio__img" src={img} />
-                    ))}
+                    )}
                   </Col>
                 </Row>
               </Container>
@@ -155,18 +200,18 @@ const Portfolio = () => {
           <div className="portfolio__grid">
             {pages.map((page) => (
               <ul
+                key={page.name}
                 data-aos="zoom-in"
                 data-aos-delay="30"
                 data-aos-easing="ease-in-out"
                 data-aos-offset="200"
                 data-aos-duration="1200"
-                key={page}
               >
                 <img
-                  onClick={() => setShow(true)}
+                  onClick={handledSelectedProject}
                   className="portfolio__img"
-                  src={page}
-                  alt={page}
+                  src={page.img}
+                  alt={page.name}
                 />
               </ul>
             ))}
