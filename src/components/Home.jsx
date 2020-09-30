@@ -67,10 +67,8 @@ const Home = () => {
 					</Col>
 					<Col
 						data-aos="fade-up"
-						data-aos-delay="30"
 						data-aos-easing="ease-in-out"
-						data-aos-offset="200"
-						data-aos-duration="1800"
+						data-aos-duration="1000"
 						className="home__col1"
 					>
 						<img src={profile} alt="avatar" className="home__avatar" />

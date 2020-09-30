@@ -13,14 +13,7 @@ const Skills = () => {
 	];
 	return (
 		<div id="skills">
-			<div
-				className="skills"
-				data-aos="fade-up"
-				data-aos-delay="30"
-				data-aos-easing="ease-in-out"
-				data-aos-offset="200"
-				data-aos-duration="1200"
-			>
+			<div className="skills" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
 				<Container>
 					<Row>
 						<Col className="skills__col1">
@@ -31,9 +24,7 @@ const Skills = () => {
 										<div
 											key={skill.name}
 											data-aos="zoom-in-right"
-											data-aos-delay="30"
 											data-aos-easing="ease-in-out"
-											data-aos-offset="200"
 											data-aos-duration="800"
 											className="skills__info"
 										>
@@ -42,10 +33,8 @@ const Skills = () => {
 											<div className="skills__progessbarback">
 												<div
 													data-aos="zoom-in-right"
-													data-aos-delay="30"
 													data-aos-easing="ease-in-out"
-													data-aos-offset="200"
-													data-aos-duration="1800"
+													data-aos-duration="1000"
 													style={{ width: `${skill.percentage}` }}
 													className="skills__progessbar"
 												/>
@@ -62,10 +51,8 @@ const Skills = () => {
 									<Row>
 										<Col
 											data-aos="flip-right"
-											data-aos-delay="30"
 											data-aos-easing="ease-in-out"
-											data-aos-offset="200"
-											data-aos-duration="1800"
+											data-aos-duration="1000"
 											className="skills__circles"
 										>
 											<div>
@@ -94,10 +81,8 @@ const Skills = () => {
 										</Col>
 										<Col
 											data-aos="flip-left"
-											data-aos-delay="30"
 											data-aos-easing="ease-in-out"
-											data-aos-offset="200"
-											data-aos-duration="1800"
+											data-aos-duration="1000"
 											className="skills__circles"
 										>
 											<div>
@@ -128,10 +113,8 @@ const Skills = () => {
 									<Row>
 										<Col
 											data-aos="flip-right"
-											data-aos-delay="30"
 											data-aos-easing="ease-in-out"
-											data-aos-offset="200"
-											data-aos-duration="1800"
+											data-aos-duration="1000"
 											className="skills__circles"
 										>
 											<div>
@@ -160,10 +143,8 @@ const Skills = () => {
 										</Col>
 										<Col
 											data-aos="flip-left"
-											data-aos-delay="30"
 											data-aos-easing="ease-in-out"
-											data-aos-offset="200"
-											data-aos-duration="1800"
+											data-aos-duration="1000"
 											className="skills__circles"
 										>
 											<div>

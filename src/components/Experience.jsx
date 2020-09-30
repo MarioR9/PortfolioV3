@@ -62,7 +62,7 @@ const Experience = () => {
 
 	return (
 		<Container id="experience">
-			<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1200">
+			<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
 				<Container className="exp">
 					<Row>
 						<Col>
@@ -71,10 +71,8 @@ const Experience = () => {
 								{education.map((edu) => (
 									<Row
 										data-aos="slide-right"
-										data-aos-delay="30"
 										data-aos-easing="ease-in-out"
-										data-aos-offset="200"
-										data-aos-duration="1800"
+										data-aos-duration="1000"
 										key={edu.name}
 									>
 										<Col>
@@ -98,10 +96,8 @@ const Experience = () => {
 								{workexperience.map((work) => (
 									<Row
 										data-aos="slide-left"
-										data-aos-delay="30"
 										data-aos-easing="ease-in-out"
-										data-aos-offset="200"
-										data-aos-duration="1800"
+										data-aos-duration="1000"
 										key={work.company}
 									>
 										<Col>

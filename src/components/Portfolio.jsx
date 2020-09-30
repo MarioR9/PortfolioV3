@@ -264,13 +264,7 @@ const Portfolio = () => {
 
 	return (
 		<div id="portfolio">
-			<Container
-				data-aos="fade-up"
-				data-aos-delay="30"
-				data-aos-easing="ease-in-out"
-				data-aos-offset="200"
-				data-aos-duration="1200"
-			>
+			<Container data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
 				<Container>
 					<Modal
 						size="xl"
@@ -285,22 +279,10 @@ const Portfolio = () => {
 							<Container>
 								<Row>
 									<Col>
-										<h2
-											data-aos="fade-down"
-											data-aos-delay="40"
-											data-aos-easing="ease-in-out"
-											data-aos-offset="100"
-											data-aos-duration="1200"
-										>
+										<h2 data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-duration="1000">
 											{currentProject.title}
 										</h2>
-										<p
-											data-aos="fade-down"
-											data-aos-delay="40"
-											data-aos-easing="ease-in-out"
-											data-aos-offset="100"
-											data-aos-duration="1200"
-										>
+										<p data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-duration="1000">
 											{currentProject.description}
 										</p>
 										<div className="portfolio__tech">
@@ -309,9 +291,7 @@ const Portfolio = () => {
 													currentProject.technologies.map((tech) => (
 														<li
 															data-aos="fade-up"
-															data-aos-delay="40"
 															data-aos-easing="ease-in-out"
-															data-aos-offset="100"
 															data-aos-duration="1200"
 															key={tech}
 														>
@@ -321,13 +301,7 @@ const Portfolio = () => {
 												)}
 											</Row>
 										</div>
-										<div
-											data-aos="fade-up"
-											data-aos-delay="40"
-											data-aos-easing="ease-in-out"
-											data-aos-offset="100"
-											data-aos-duration="1800"
-										>
+										<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1200">
 											<ul className="portfolio__social">
 												{currentProject.length === 0 ? null : (
 													currentProject.social.map((tech) => (
@@ -341,13 +315,7 @@ const Portfolio = () => {
 											</ul>
 										</div>
 									</Col>
-									<Col
-										data-aos="fade-down"
-										data-aos-delay="40"
-										data-aos-easing="ease-in-out"
-										data-aos-offset="100"
-										data-aos-duration="1800"
-									>
+									<Col data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-duration="1100">
 										{currentProject.length === 0 ? null : (
 											currentProject.images.map((project) => (
 												<div>

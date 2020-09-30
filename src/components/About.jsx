@@ -45,13 +45,7 @@ const About = () => {
 
 	return (
 		<div className="about" id="about">
-			<Container
-				data-aos="fade-up"
-				data-aos-delay="30"
-				data-aos-easing="ease-in-out"
-				data-aos-offset="200"
-				data-aos-duration="1200"
-			>
+			<Container data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
 				<Row>
 					<Col className="about__col1">
 						<img className="about__img" src={aboutImg} alt="aboutImage" />
@@ -59,10 +53,8 @@ const About = () => {
 					<Col className="about__col2">
 						<div
 							data-aos="slide-left"
-							data-aos-delay="30"
 							data-aos-easing="ease-in-out"
-							data-aos-offset="200"
-							data-aos-duration="1200"
+							data-aos-duration="1000"
 							className="about__info"
 						>
 							<h2>About Me</h2>
@@ -73,10 +65,8 @@ const About = () => {
 									{technologies.map((tech) => (
 										<li
 											data-aos="fade-up"
-											data-aos-delay="40"
 											data-aos-easing="ease-in-out"
-											data-aos-offset="100"
-											data-aos-duration="1800"
+											data-aos-duration="1000"
 											key={tech}
 										>
 											<span>{tech}</span>
@@ -108,10 +98,8 @@ const About = () => {
 					{traits.map((trait) => (
 						<Col
 							data-aos={trait.animation}
-							data-aos-delay="30"
 							data-aos-easing="ease-in-out"
-							data-aos-offset="200"
-							data-aos-duration="1800"
+							data-aos-duration="1000"
 							key={trait.title}
 						>
 							<div className="about__traits">
