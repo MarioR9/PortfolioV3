@@ -29,7 +29,18 @@ Project is created with:
 ## Images
 
 ##### Main 
-<img src="ReadmeImages/portfoliov2.png" width="300"> 
+<img src="ReadmeImages/main.png" width="300"> 
+
+##### About 
+<img src="ReadmeImages/about.png" width="300"> 
+
+##### Skills 
+<img src="ReadmeImages/skills.png" width="300"> 
+
+##### Experience 
+<img src="ReadmeImages/exp.png" width="300"> 
 
 ##### Projects 
 <img src="ReadmeImages/projects.png" width="300"> 
+
+
