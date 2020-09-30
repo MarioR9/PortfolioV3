@@ -18,6 +18,10 @@ const Navigation = () => {
       <label className="nav__menu" for='toggle'>&#9776;</label>
       <input type='checkbox' id='toggle'></input>
       <div className="nav__links">
+      <label className="switch">
+        <input type="checkbox"/>
+        <span className="slider"></span>
+      </label>
         {links.map((link) => (
           <Link
             key={link}
@@ -31,6 +35,7 @@ const Navigation = () => {
         ))}
       </div>
       </Container>
+      
     </div>
   );
 };
