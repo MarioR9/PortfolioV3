@@ -16,6 +16,7 @@ const App = () => {
 			<Skills />
 			<Experience />
 			<Portfolio />
+			<p className="app__2020">© 2020 Mario Rodriguez</p>
 		</div>
 	);
 };

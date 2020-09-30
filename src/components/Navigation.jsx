@@ -17,7 +17,7 @@ const Navigation = () => {
 				</div>
 				<div>
 					<label className="nav__menu" for="toggle">
-						&#9776;
+						<i class="fas fa-bars fa-lg" />
 					</label>
 					<input type="checkbox" id="toggle" />
 					<div className="nav__links">
