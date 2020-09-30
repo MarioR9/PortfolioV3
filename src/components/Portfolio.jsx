@@ -16,7 +16,7 @@ const Portfolio = () => {
   const pages = [
     {
       img: translateme,
-      name: "Translateme",
+      name: "translateme",
     },
     {
       img: tonester,
@@ -49,7 +49,7 @@ const Portfolio = () => {
   ];
   const projects = [
     {
-      title: "Translateme",
+      title: "translateme",
       description:
         "Translateme uses a machine learning technology to classify and translate images into different languages. Once the image is captured, users can flip the image to reveal the desired translated word for the image.",
       technologies: [
@@ -61,10 +61,23 @@ const Portfolio = () => {
         "SemanticUI",
       ],
       images: [
-        "https://raw.githubusercontent.com/MarioR9/TranslateMeFrontend/master/ReadmeImages/main.png",
-        "https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/categories.png",
-        "https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/categoryCards.png",
-        "https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/selectLanguage.png",
+        {
+       img: "https://raw.githubusercontent.com/MarioR9/TranslateMeFrontend/master/ReadmeImages/main.png",
+       description: "Authentication page"
+      },
+      {
+        img: "https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/categories.png",
+        description: "ALl categories page",
+      },
+      {
+        img: "https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/categoryCards.png",
+        description: "User's selected category page"
+      },
+      {
+        img: "https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/selectLanguage.png",
+        description: "Translation process"
+      }
+       
       ],
       social: [
         {
@@ -76,7 +89,8 @@ const Portfolio = () => {
           link: "https://www.youtube.com/watch?v=M7LLMVlS6hg&feature=emb_logo",
         },
       ],
-    },
+    }
+      
   ];
   const [currentProject, setProject] = useState([])
   const handledSelectedProject = (e) => {
@@ -182,8 +196,11 @@ const Portfolio = () => {
                     ? 
                     null
                     :
-                    currentProject.images.map(img => 
-                      <img key={img.length} className="portfolio__img" src={img} />
+                    currentProject.images.map(project => 
+                      <div>
+                      <img key={project.description} className="portfolio__img" src={project.img} />
+                      <p >{project.description}</p>
+                      </div>
                     )}
                   </Col>
                 </Row>

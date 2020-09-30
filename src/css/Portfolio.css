@@ -56,8 +56,10 @@
 .portfolio__modalContainer {
   background-color: #1b1b1c8a;
 }
+.portfolio__modalContainer h2{
+  text-transform: capitalize;
+}
 .portfolio__modalContainer p, h2{
-  
   padding: 2%;
   color: white;
 }
