@@ -315,7 +315,7 @@ const Portfolio = () => {
 											</ul>
 										</div>
 									</Col>
-									<Col data-aos="fade-down" data-aos-easing="ease-in-out" data-aos-duration="1100">
+									<Col data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1100">
 										{currentProject.length === 0 ? null : (
 											currentProject.images.map((project) => (
 												<div>
