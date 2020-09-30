@@ -1,135 +1,142 @@
 .nav {
-  background-color: #110f17;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+	background-color: #110f17;
+	position: sticky;
+	top: 0;
+	z-index: 100;
 }
 .nav__logo {
-  margin-top: 2%;
-  float: left;
-  height: 55px;
-  object-fit: contain;
+	margin-top: 2%;
+	float: left;
+	height: 55px;
+	object-fit: contain;
 }
 .nav__menu {
-  display: none;
+	display: none;
 }
 .nav__links {
-  margin-top: 2%;
-  display: flex;
-  float: right;
+	margin-top: 2%;
+	display: flex;
+	float: right;
 }
 .nav__links li {
-  font-weight: bold;
-  font-family: "roboto", sans-serif;
-  font-size: 18px;
-  opacity: 1;
-  line-height: 30px;
-  color: white;
-  display: inline;
-  list-style: none;
-  padding-left: 20px;
+	font-weight: bold;
+	font-family: "roboto", sans-serif;
+	font-size: 18px;
+	opacity: 1;
+	line-height: 30px;
+	color: white;
+	display: inline;
+	list-style: none;
+	padding-left: 20px;
 }
 .nav__links li:hover {
-  color: #11bb9f;
-  transition: 0.7s;
+	color: #11bb9f;
+	transition: 0.7s;
 }
 .nav__links a {
-  color: transparent;
+	color: transparent;
 }
 .nav__menu {
-  width: 26px;
-  margin: 0 40px 0 0;
-  font-size: 40px;
-  line-height: 70px;
-  display: none;
-  color: #0bceaf;
+	width: 26px;
+	margin: 0 40px 0 0;
+	font-size: 40px;
+	line-height: 70px;
+	display: none;
+	color: #0bceaf;
 }
 
-#toggle{
-  display: none;
+#toggle {
+	display: none;
 }
 
 @media screen and (max-width: 768px) {
-  .nav__logo {
-    margin-top: 5%;
-    display: block;
-    float: right;
-  }
-  .nav__menu {
-    padding: 3%;
-    display: block;
-    cursor: pointer;
-  }
-  .nav__links {
-    width: 100%;
-    height: 200px;
-    padding: 1%;
-    margin: 0;
-    display: none;
-  }
- 
-  #toggle:checked + .nav__links{
-    display: grid;
-  }
-  .nav {
-    background-color: #202026;
-    position: sticky;
-    top: 0;
-    z-index: 400;
-  }
-  
+	.nav__logo {
+		margin-top: 5%;
+		display: block;
+		float: right;
+	}
+	.nav__menu {
+		padding: 3%;
+		display: block;
+		cursor: pointer;
+	}
+	.nav__links {
+		width: 100%;
+		height: 200px;
+		padding: 1%;
+		margin: 0;
+		display: none;
+	}
+
+	#toggle:checked + .nav__links {
+		display: grid;
+	}
+	.nav {
+		background-color: #202026;
+		position: sticky;
+		top: 0;
+		z-index: 400;
+	}
+}
+.nav__switch {
+	position: relative;
+	display: flex;
+	width: 60px;
+	height: 34px;
 }
 
-
-.switch {
-  position: relative;
-  display: flex;
-  width: 60px;
-  height: 34px;
+.nav__switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
 }
 
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
+.nav__slider {
+	border-radius: 34px;
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(114, 111, 111, 0.466);
+	-webkit-transition: .4s;
+	transition: .4s;
 }
 
-.slider {
-  border-radius: 34px;
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: black;
-  -webkit-transition: .4s;
-  transition: .4s;
+.nav__slider:before {
+	border-radius: 50%;
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: #0bceaf;
+	-webkit-transition: .4s;
+	transition: .4s;
 }
 
-.slider:before {
-  border-radius: 50%;
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: #0bceaf;
-  -webkit-transition: .4s;
-  transition: .4s;
+input:checked + .nav__slider {
+	background-color: white;
 }
 
-input:checked + .slider {
-  background-color: white;
+input:checked .home {
+	border: solid;
+	color: white;
 }
 
-input:focus + .slider {
-  box-shadow: 0 0 1px white;
+input:focus + .nav__slider {
 }
 
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+input:checked + .nav__slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+.nav__switchContainer {
+	position: relative;
+	left: 2%;
+	padding: 1%;
 }
