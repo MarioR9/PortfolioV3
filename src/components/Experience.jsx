@@ -62,13 +62,7 @@ const Experience = () => {
 
 	return (
 		<Container id="experience">
-			<div
-				data-aos="fade-up"
-				data-aos-delay="30"
-				data-aos-easing="ease-in-out"
-				data-aos-offset="200"
-				data-aos-duration="1500"
-			>
+			<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1200">
 				<Container className="exp">
 					<Row>
 						<Col>

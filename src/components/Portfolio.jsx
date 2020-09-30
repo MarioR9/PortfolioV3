@@ -235,11 +235,11 @@ const Portfolio = () => {
 			images: [
 				{
 					img: 'https://github.com/MarioR9/PortfolioV3/raw/master/ReadmeImages/main.png',
-					description: 'Authentication Page'
+					description: 'Main Page'
 				},
 				{
 					img: 'https://github.com/MarioR9/PortfolioV3/raw/master/ReadmeImages/about.png',
-					description: 'Authentication Page'
+					description: 'About Page'
 				}
 			],
 			social: [
@@ -257,7 +257,7 @@ const Portfolio = () => {
 	const [ currentProject, setProject ] = useState([]);
 	const handledSelectedProject = (e) => {
 		setShow(true);
-		setProject(projects.find((project) => project.title == e.target.alt));
+		setProject(projects.find((project) => project.title === e.target.alt));
 	};
 	const [ show, setShow ] = useState(false);
 	const handleClose = () => setShow(false);
@@ -355,6 +355,7 @@ const Portfolio = () => {
 														key={project.description}
 														className="portfolio__img"
 														src={project.img}
+														alt="img"
 													/>
 													<p>{project.description}</p>
 												</div>
@@ -374,7 +375,12 @@ const Portfolio = () => {
 					</div>
 					<div className="portfolio__grid">
 						{pages.map((page) => (
-							<ul key={page.name}>
+							<ul
+								data-aos="zoom-in"
+								data-aos-easing="ease-in-out"
+								data-aos-duration="1800"
+								key={page.name}
+							>
 								<img
 									onClick={handledSelectedProject}
 									className="portfolio__img"

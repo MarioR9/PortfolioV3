@@ -15,7 +15,7 @@ const Navigation = () => {
 						<img className="nav__logo" src={Logo} alt="logo" />
 					</a>
 				</div>
-				<di>
+				<div>
 					<label className="nav__menu" for="toggle">
 						&#9776;
 					</label>
@@ -33,14 +33,15 @@ const Navigation = () => {
 								<li>{link}</li>
 							</Link>
 						))}
+						{/* 
 						<div className="nav__switchContainer">
 							<label className="nav__switch">
 								<input type="checkbox" className="checkbox2" />
 								<span className="nav__slider" />
 							</label>
-						</div>
+						</div> */}
 					</div>
-				</di>
+				</div>
 			</Container>
 		</div>
 	);

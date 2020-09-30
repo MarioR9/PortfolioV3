@@ -50,7 +50,7 @@ const About = () => {
 				data-aos-delay="30"
 				data-aos-easing="ease-in-out"
 				data-aos-offset="200"
-				data-aos-duration="1800"
+				data-aos-duration="1200"
 			>
 				<Row>
 					<Col className="about__col1">
@@ -62,7 +62,7 @@ const About = () => {
 							data-aos-delay="30"
 							data-aos-easing="ease-in-out"
 							data-aos-offset="200"
-							data-aos-duration="1800"
+							data-aos-duration="1200"
 							className="about__info"
 						>
 							<h2>About Me</h2>
