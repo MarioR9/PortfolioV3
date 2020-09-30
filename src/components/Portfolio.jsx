@@ -62,22 +62,14 @@ const Portfolio = () => {
       ],
       images: [
         {
-       img: "https://raw.githubusercontent.com/MarioR9/TranslateMeFrontend/master/ReadmeImages/main.png",
-       description: "Authentication page"
-      },
-      {
-        img: "https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/categories.png",
-        description: "ALl categories page",
-      },
-      {
-        img: "https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/categoryCards.png",
-        description: "User's selected category page"
-      },
-      {
-        img: "https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/selectLanguage.png",
-        description: "Translation process"
-      }
-       
+          img: "https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/categoryCards.png",
+          description: "User's selected category page"
+        },
+        {
+          img: "https://github.com/MarioR9/TranslateMeFrontend/raw/master/ReadmeImages/selectLanguage.png",
+          description: "Translation process"
+        }
+
       ],
       social: [
         {
@@ -108,10 +100,6 @@ const Portfolio = () => {
         img: "https://github.com/MarioR9/tonester_frontend/raw/master/ReadmeImages/newUser.png",
         description: "New user page",
       },
-      {
-        img: "https://github.com/MarioR9/tonester_frontend/raw/master/ReadmeImages/profile.png",
-        description: "User's profile"
-      }
        
       ],
       social: [
@@ -142,22 +130,6 @@ const Portfolio = () => {
       {
         img: "https://github.com/MarioR9/UberEats_HotZones/raw/master/ReadmeImages/searchtap.png",
         description: "User's Current location",
-      },
-      {
-        img: "https://github.com/MarioR9/UberEats_HotZones/raw/master/ReadmeImages/locationset.png",
-        description: "User set location"
-      },
-      {
-        img: "https://github.com/MarioR9/UberEats_HotZones/raw/master/ReadmeImages/notbusyresult.png",
-        description: "Not busy result"
-      },
-      {
-        img: "https://github.com/MarioR9/UberEats_HotZones/raw/master/ReadmeImages/mediumbusyresult.png",
-        description: "Semi-busy result"
-      },
-      {
-        img: "https://github.com/MarioR9/UberEats_HotZones/raw/master/ReadmeImages/busyresult.png",
-        description: "Busy result"
       }
        
       ],
@@ -209,24 +181,8 @@ const Portfolio = () => {
    description: "Authentication Page"
   },
   {
-    img: "https://github.com/MarioR9/RickAndMortyFrontend/raw/master/ReadmeImages/characterCreation.png",
-    description: "New user page",
-  },
-  {
-    img: "https://github.com/MarioR9/RickAndMortyFrontend/raw/master/ReadmeImages/userProfile.png",
-    description: "Profile page"
-  },
-  {
-    img: "https://github.com/MarioR9/RickAndMortyFrontend/raw/master/ReadmeImages/stage.png",
-    description: "Stage"
-  },
-  {
     img: "https://github.com/MarioR9/RickAndMortyFrontend/raw/master/ReadmeImages/captureMorty.png",
     description: "Collision System"
-  },
-  {
-    img: "https://github.com/MarioR9/RickAndMortyFrontend/raw/master/ReadmeImages/mortyStats.png",
-    description: "User's Morty page"
   }
    
   ],
