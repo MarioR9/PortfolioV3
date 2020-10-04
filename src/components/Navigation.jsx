@@ -33,13 +33,6 @@ const Navigation = () => {
 								<li>{link}</li>
 							</Link>
 						))}
-						{/* 
-						<div className="nav__switchContainer">
-							<label className="nav__switch">
-								<input type="checkbox" className="checkbox2" />
-								<span className="nav__slider" />
-							</label>
-						</div> */}
 					</div>
 				</div>
 			</Container>
