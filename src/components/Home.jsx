@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../css/Home.css';
 import profile from '../assets/avatar.jpeg';
+//new Logo?
 
 const Home = () => {
 	const name = { first: 'Mario', last: 'Rodriguez' };
