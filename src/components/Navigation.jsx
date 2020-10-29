@@ -5,6 +5,7 @@ import { Link } from 'react-scroll';
 import { Container } from 'react-bootstrap';
 
 //new navigataion colors when page focus on
+//Color change on scroll
 
 const Navigation = () => {
 	const links = [ 'Home', 'About', 'Skills', 'Experience', 'Portfolio' ];
