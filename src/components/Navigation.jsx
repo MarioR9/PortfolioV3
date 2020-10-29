@@ -4,6 +4,8 @@ import Logo from '../assets/logo.png';
 import { Link } from 'react-scroll';
 import { Container } from 'react-bootstrap';
 
+//new navigataion colors when page focus on
+
 const Navigation = () => {
 	const links = [ 'Home', 'About', 'Skills', 'Experience', 'Portfolio' ];
 
