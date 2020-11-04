@@ -12,6 +12,8 @@ import portfoliov3 from '../assets/portfoliov3.png';
 
 import { Container, Row, Col, Modal } from 'react-bootstrap';
 
+//Rails data to fetch 
+
 const Portfolio = () => {
 	const pages = [
 		{
