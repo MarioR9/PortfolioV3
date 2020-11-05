@@ -8,7 +8,17 @@ const Home2 = () => {
 			<Container>
 				<Row>
 				<Col className="home2__col2">
-						
+					
+						<div>
+							<div className="home__header">
+								<h2>{name.first + ' ' + name.last}</h2>
+								<h4>Software Engineer</h4>
+							</div>
+							
+						</div>
+					</Col>
+					<Col>
+						<img src={profile} alt="avatar" className="home__avatar" />	
 					</Col>	
 				</Row>
 			</Container>
