@@ -5,8 +5,10 @@ import '../css/Home.css';
 const Home2 = () => {
 	return (
 		<div className="home">
-		
+			<Container>
+			
+			</Container>
 		</div>
 	);
 };
-export default Home;
+export default Home2;
