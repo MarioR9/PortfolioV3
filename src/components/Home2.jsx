@@ -6,7 +6,9 @@ const Home2 = () => {
 	return (
 		<div className="home">
 			<Container>
-			
+				<Row>
+					
+				</Row>
 			</Container>
 		</div>
 	);
