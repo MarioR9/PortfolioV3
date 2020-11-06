@@ -8,11 +8,6 @@ const Home2 = () => {
 			<Container>
 				<Row>
 				<Col className="home2__col2">
-					
-						<div>
-							
-							
-						</div>
 					</Col>
 					<Col>
 						<img src={profile} alt="avatar" className="home__avatar" />	
