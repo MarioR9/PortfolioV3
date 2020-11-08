@@ -7,11 +7,7 @@ const Home2 = () => {
 		<div className="home2">
 			<Container>
 				<Row>
-				<Col className="home2__col2">
-					</Col>
-					<Col>
-						<img src={profile} alt="avatar" className="home__avatar" />	
-					</Col>	
+				
 				</Row>
 			</Container>
 		</div>
