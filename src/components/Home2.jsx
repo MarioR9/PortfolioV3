@@ -8,6 +8,7 @@ const Home2 = () => {
 			<Container>
 				<Row>
 					<h1>New Card</h1>
+					<h1>New Card2</h1>
 				</Row>
 			</Container>
 		</div>
