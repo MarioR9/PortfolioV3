@@ -105,6 +105,13 @@
   .about {
     text-align: center;
   }
+}
 
-  
+@media only screen and (max-width: 991px) {
+  .whatido-container {
+    display: block;
+  }
+  .about-col {
+    margin-bottom: 20px;
+  }
 }

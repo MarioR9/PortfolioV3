@@ -21,6 +21,33 @@ const Experience = () => {
 	];
 	const workexperience = [
 		{
+			title: 'Ecommerce Software Engineer',
+			company: 'G&G Outfitters',
+			tenure: 'current',
+			description: 'Resposabilities',
+			skills: [
+				'Development and enhancement of a Opencart application',
+				'Develop reports and create custom modules within Opencart ecommerce platform',
+				'Research, develop logic, code, test, and deploy Opencart/PHP application',
+				'Modify and build on existing code base of Opencart MVC platform',
+				'Participate in the design and architecture of applications to meet business requirements',
+				'Effectively prioritize and manage multiple tasks to meet deadlines',
+				'Helping formulate an effective, responsive design and turning it into a working theme and plugin'
+			]
+		},
+		{
+			title: 'Software Engineer',
+			company: 'Village Book Builders',
+			tenure: 'current',
+			description: 'Resposabilities',
+			skills: [
+				'Designing and implementing new features and functionality for WordPress',
+				'Helping formulate an effective, responsive design and turning it into a working theme and plugin for WordPress',
+				'Responsive design and development',
+				'Install, test, and debug WordPress plugins'
+			]
+		},
+		{
 			title: 'Web Development',
 			company: 'Freelancer',
 			tenure: 'current',
@@ -64,7 +91,7 @@ const Experience = () => {
 		<Container id="experience">
 			<div data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000">
 				<Container className="exp">
-					<Row>
+					<Row className="exp-row">
 						<Col>
 							<h3>Education</h3>
 							<div>

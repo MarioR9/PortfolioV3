@@ -16,7 +16,7 @@ const App = () => {
 			<Skills />
 			<Experience />
 			<Portfolio />
-			<p className="app__2020">© 2020 Mario Rodriguez</p>
+			<p className="app__2020">© 2021 Mario Rodriguez</p>
 		</div>
 	);
 };

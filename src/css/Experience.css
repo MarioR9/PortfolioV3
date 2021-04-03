@@ -28,3 +28,8 @@
 .exp__colorDetails {
   color: #11bb9f;
 }
+@media only screen and (max-width: 991px) {
+  .exp-row {
+    display: block;
+  }
+}

@@ -28,26 +28,26 @@ const Portfolio = () => {
 			img: uber,
 			name: 'uberEats Hotzones'
 		},
-		{
+		/*{
 			img: portfoliov1,
 			name: 'portfoliov1'
-		},
+		},*/
 		{
 			img: rickandmorty1,
 			name: 'rick and morty adventures'
 		},
-		{
+		/*{
 			img: portfoliov2,
 			name: 'portfoliov2'
-		},
+		},*/
 		{
 			img: marsrover,
 			name: 'marsrover'
 		},
-		{
+		/*{
 			img: portfoliov3,
 			name: 'portfoliov3'
-		}
+		}*/
 	];
 	const projects = [
 		{
@@ -125,7 +125,7 @@ const Portfolio = () => {
 			]
 		},
 
-		{
+		/*{
 			title: 'portfoliov1',
 			description:
 				'My first portfolio site, it is powered by React, HTML, CSS, and bootstrap UI. The website is host by Heroku. It Holds my basic information as well as some of my projects and a contact component that will email me whenever someone tries to get in touch with me.',
@@ -150,7 +150,7 @@ const Portfolio = () => {
 					link: 'https://mariorodriguez.herokuapp.com/'
 				}
 			]
-		},
+		},*/
 		{
 			title: 'rick and morty adventures',
 			description:
@@ -177,7 +177,7 @@ const Portfolio = () => {
 				}
 			]
 		},
-		{
+		/*{
 			title: 'portfoliov2',
 			description:
 				'It is a single page application powered by React, HTML, CSS, and Bootstrap UI. The website is host by firebase. Multiple pages containing information about me and some of my projects. ',
@@ -202,7 +202,7 @@ const Portfolio = () => {
 					link: 'https://portfolio-7f8cc.web.app/'
 				}
 			]
-		},
+		},*/
 		{
 			title: 'marsrover',
 			description:
@@ -229,7 +229,7 @@ const Portfolio = () => {
 				}
 			]
 		},
-		{
+	/*	{
 			title: 'portfoliov3',
 			description:
 				'Portfolio v3 it is powered by React, HTML, CSS, and BootstrapUI mainly. I use CSS for customization and animations. I used Fontawesome for icons and some CSS to customize color and size. Also, the page is mobile responsive from pocket phones to tablets. Portfolio V3 is hosted by Firebase',
@@ -254,7 +254,7 @@ const Portfolio = () => {
 					link: 'https://github.com/MarioR9/PortfolioV3' //edit link with new site.
 				}
 			]
-		}
+		}*/
 	];
 	const [ currentProject, setProject ] = useState([]);
 	const handledSelectedProject = (e) => {

@@ -17,6 +17,9 @@ const About = () => {
 		'BootstrapUI',
 		'SemanticUI',
 		'HTML',
+		'PHP',
+		'Twig',
+		'Materialize',
 		'CSS'
 	];
 	const traits = [
@@ -94,9 +97,10 @@ const About = () => {
 				>
 					What I do
 				</h1>
-				<Row>
+				<Row className="whatido-container">
 					{traits.map((trait) => (
 						<Col
+							className="about-col"
 							data-aos={trait.animation}
 							data-aos-easing="ease-in-out"
 							data-aos-duration="1000"
