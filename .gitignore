@@ -65,8 +65,8 @@ node_modules/
 .env
 
 
-.firebaserc
-.firebase.json
-build
-.firebase
-node_modules
+.firebaserc/
+.firebase.json/
+build/
+.firebase/
+node_modules/
